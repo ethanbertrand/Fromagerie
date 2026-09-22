@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\users\\bertrand2\\source\\repos\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {}
+    "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {}
   },
   "projects": {
-    "D:\\users\\bertrand2\\source\\repos\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {
+    "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\users\\bertrand2\\source\\repos\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
+        "projectUniqueName": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
         "projectName": "Fromagerie",
-        "projectPath": "D:\\users\\bertrand2\\source\\repos\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
-        "packagesPath": "D:\\users\\bertrand2\\.nuget\\packages\\",
-        "outputPath": "D:\\users\\bertrand2\\source\\repos\\Fromagerie\\Fromagerie\\obj\\",
+        "projectPath": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
+        "packagesPath": "C:\\Users\\BossL\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "D:\\users\\bertrand2\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\BossL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,6 +47,16 @@
         "net10.0-windows": {
           "framework": "net10.0-windows7.0",
           "targetAlias": "net10.0-windows",
+          "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[26.7.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -71,7 +76,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
