@@ -1,0 +1,16 @@
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\bin\Debug\net10.0-windows\Fromagerie.exe
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\bin\Debug\net10.0-windows\Fromagerie.deps.json
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\bin\Debug\net10.0-windows\Fromagerie.runtimeconfig.json
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\bin\Debug\net10.0-windows\Fromagerie.dll
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\bin\Debug\net10.0-windows\Fromagerie.pdb
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.Form1.resources
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.csproj.GenerateResource.cache
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.GeneratedMSBuildEditorConfig.editorconfig
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AssemblyInfoInputs.cache
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AssemblyInfo.cs
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.csproj.CoreCompileInputs.cache
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.dll
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\refint\Fromagerie.dll
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.pdb
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.genruntimeconfig.cache
+D:\users\bertrand2\source\repos\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\ref\Fromagerie.dll
