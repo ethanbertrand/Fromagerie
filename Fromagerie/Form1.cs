@@ -75,7 +75,7 @@ namespace Fromagerie
         private void TestMDP_Click(object sender, EventArgs e)
         {
             string saisieUtilisateur = NomTB.Text;
-            string saisieMDP = mdp.Text; 
+            string saisieMDP = mdp.Text;
 
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
@@ -117,6 +117,14 @@ namespace Fromagerie
                     MessageBox.Show("Erreur : " + ex.Message);
                 }
             }
+        }
+
+        private void envoiepage_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AjoutFromage f2 = new AjoutFromage();
+            f2.ShowDialog(); 
+            this.Show();
         }
     }
 }

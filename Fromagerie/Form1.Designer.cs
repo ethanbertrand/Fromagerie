@@ -36,6 +36,7 @@
             TestMDP = new Button();
             InscripUserTb = new TextBox();
             InscripMDPUser = new TextBox();
+            envoiepage = new Button();
             SuspendLayout();
             // 
             // Inscription
@@ -107,11 +108,22 @@
             InscripMDPUser.Size = new Size(125, 27);
             InscripMDPUser.TabIndex = 10;
             // 
+            // envoiepage
+            // 
+            envoiepage.Location = new Point(1031, 173);
+            envoiepage.Name = "envoiepage";
+            envoiepage.Size = new Size(106, 37);
+            envoiepage.TabIndex = 11;
+            envoiepage.Text = "button2";
+            envoiepage.UseVisualStyleBackColor = true;
+            envoiepage.Click += envoiepage_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1346, 1099);
+            Controls.Add(envoiepage);
             Controls.Add(InscripMDPUser);
             Controls.Add(InscripUserTb);
             Controls.Add(TestMDP);
@@ -138,5 +150,6 @@
         private Button TestMDP;
         private TextBox InscripUserTb;
         private TextBox InscripMDPUser;
+        private Button envoiepage;
     }
 }
