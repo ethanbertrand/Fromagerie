@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {}
+    "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {
+    "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\Fromagerie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
+        "projectUniqueName": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
         "projectName": "Fromagerie",
-        "projectPath": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
-        "packagesPath": "C:\\Users\\BossL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\obj\\",
+        "projectPath": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\Fromagerie.csproj",
+        "packagesPath": "D:\\users\\zhou\\.nuget\\packages\\",
+        "outputPath": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\BossL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "D:\\users\\zhou\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -76,7 +81,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.401/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.400/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
