@@ -47,3 +47,14 @@ C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\bin\Debug\net10.0
 C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\bin\Debug\net10.0-windows\runtimes\win-x64\native\krbcc64.dll
 C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\bin\Debug\net10.0-windows\BCrypt-Net-Next.dll
 C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutFromage.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutAchat.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutCommande.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutRole.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutTypeFromage.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutProducteur.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutPermission.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutPermissionDesRoles.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutEntrepot.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutZone.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutEmplacement.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutMouvement.resources
