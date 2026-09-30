@@ -26,17 +26,17 @@ namespace Fromagerie
         {
             DateTime date = DateChoisir.Value;
             string quantite = QuantiteTB.Text;
-            string id_1 = Convert.ToString(CommandeCB.SelectedValue);
-            string id_2 = Convert.ToString(DeplaceurCB.SelectedValue);
-            string id_3 = Convert.ToString(FromageCB.SelectedValue);
-            string id_4 = Convert.ToString(EmplacementCB1.SelectedValue);
-            string id_5 = Convert.ToString(EmplacementCB2.SelectedValue);
+            string id_1 = CommandeCB.SelectedValue.ToString();
+            string id_2 = DeplaceurCB.SelectedValue.ToString();
+            string id_3 = FromageCB.SelectedValue.ToString();
+            string id_4 = EmplacementCB1.SelectedValue.ToString();
+            string id_5 = EmplacementCB2.SelectedValue.ToString();
             using (MySqlConnection conn = new MySqlConnection(connectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO Mouvement(date_, quantite, id_1, id_2, id_3, id_4, id_5) VALUES (@Date, @Quantite, @id_1, @id_2, @id_3, @id_4, @id_5)";
+                    string query = "INSERT INTO Mouvement(date_, quantite, id_1, id_2, id_3, id_4, id_5) VALUES (@Nom, @mdp, @role)";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Date", date);

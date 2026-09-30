@@ -226,5 +226,10 @@ namespace Fromagerie
         {
             Bouton("Fromagerie.AjoutEmplacement");
         }
+
+        private void AjoutMouvementB_Click(object sender, EventArgs e)
+        {
+            Bouton("Fromagerie.AjoutMouvement");
+        }
     }
 }

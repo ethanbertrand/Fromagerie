@@ -30,7 +30,6 @@
         {
             Date = new Label();
             label1 = new Label();
-            CalendrierDate = new MonthCalendar();
             QuantiteTB = new TextBox();
             label2 = new Label();
             CommandeCB = new ComboBox();
@@ -43,6 +42,7 @@
             EmplacementCB1 = new ComboBox();
             EmplacementCB2 = new ComboBox();
             Enregistrer = new Button();
+            DateChoisir = new DateTimePicker();
             SuspendLayout();
             // 
             // Date
@@ -62,12 +62,6 @@
             label1.Size = new Size(66, 20);
             label1.TabIndex = 1;
             label1.Text = "Quantite";
-            // 
-            // CalendrierDate
-            // 
-            CalendrierDate.Location = new Point(6, 60);
-            CalendrierDate.Name = "CalendrierDate";
-            CalendrierDate.TabIndex = 2;
             // 
             // QuantiteTB
             // 
@@ -171,11 +165,19 @@
             Enregistrer.UseVisualStyleBackColor = true;
             Enregistrer.Click += Enregistrer_Click;
             // 
+            // DateChoisir
+            // 
+            DateChoisir.Location = new Point(27, 58);
+            DateChoisir.Name = "DateChoisir";
+            DateChoisir.Size = new Size(256, 27);
+            DateChoisir.TabIndex = 15;
+            // 
             // AjoutMouvement
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(DateChoisir);
             Controls.Add(Enregistrer);
             Controls.Add(EmplacementCB2);
             Controls.Add(EmplacementCB1);
@@ -188,7 +190,6 @@
             Controls.Add(CommandeCB);
             Controls.Add(label2);
             Controls.Add(QuantiteTB);
-            Controls.Add(CalendrierDate);
             Controls.Add(label1);
             Controls.Add(Date);
             Name = "AjoutMouvement";
@@ -201,7 +202,6 @@
 
         private Label Date;
         private Label label1;
-        private MonthCalendar CalendrierDate;
         private TextBox QuantiteTB;
         private Label label2;
         private ComboBox CommandeCB;
@@ -214,5 +214,6 @@
         private ComboBox EmplacementCB1;
         private ComboBox EmplacementCB2;
         private Button Enregistrer;
+        private DateTimePicker DateChoisir;
     }
 }

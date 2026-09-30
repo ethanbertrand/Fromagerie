@@ -49,6 +49,7 @@
             AjoutEntrepotB = new Button();
             AjoutZoneB = new Button();
             AjoutEmplacementB = new Button();
+            AjoutMouvementB = new Button();
             SuspendLayout();
             // 
             // Inscription
@@ -246,11 +247,22 @@
             AjoutEmplacementB.UseVisualStyleBackColor = true;
             AjoutEmplacementB.Click += AjoutEmplacementB_Click;
             // 
+            // AjoutMouvementB
+            // 
+            AjoutMouvementB.Location = new Point(331, 966);
+            AjoutMouvementB.Name = "AjoutMouvementB";
+            AjoutMouvementB.Size = new Size(143, 37);
+            AjoutMouvementB.TabIndex = 24;
+            AjoutMouvementB.Text = "AjoutMouvement";
+            AjoutMouvementB.UseVisualStyleBackColor = true;
+            AjoutMouvementB.Click += AjoutMouvementB_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1346, 1099);
+            Controls.Add(AjoutMouvementB);
             Controls.Add(AjoutEmplacementB);
             Controls.Add(AjoutZoneB);
             Controls.Add(AjoutEntrepotB);
@@ -303,5 +315,6 @@
         private Button AjoutEntrepotB;
         private Button AjoutZoneB;
         private Button AjoutEmplacementB;
+        private Button AjoutMouvementB;
     }
 }
