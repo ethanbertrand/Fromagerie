@@ -36,7 +36,23 @@ namespace Fromagerie
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO Mouvement(date_, quantite, id_1, id_2, id_3, id_4, id_5) VALUES (@Date, @Quantite, @id_1, @id_2, @id_3, @id_4, @id_5)";
+                    string query = "SELECT Poids FROM Fromage WHERE id = @id_3";
+                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@id_3", id_3);
+                        object result = cmd.ExecuteScalar();
+                        if (result != null && result != DBNull.Value)
+                        {
+                            double poidsFromage = Convert.ToDouble(result);
+                            double quantiteDouble = Convert.ToDouble(quantite);
+                            if (quantiteDouble > poidsFromage)
+                            {
+                                MessageBox.Show("La quantité saisie dépasse le poids du fromage sélectionné.");
+                                return; 
+                            }
+                        }
+                    }
+                    query = "INSERT INTO Mouvement(date_, quantite, id_1, id_2, id_3, id_4, id_5) VALUES (@Date, @Quantite, @id_1, @id_2, @id_3, @id_4, @id_5)";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Date", date);

@@ -125,7 +125,7 @@ namespace Fromagerie
 
         private void envoiepage_Click(object sender, EventArgs e)
         {
-            Bouton("Fromagerie.AjoutUtilisateur");
+            Bouton("Fromagerie.AjoutFromage");
         }
 
         private void AjoutAchatB_Click(object sender, EventArgs e)
