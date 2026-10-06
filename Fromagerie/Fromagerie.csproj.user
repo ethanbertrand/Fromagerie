@@ -1,8 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <ItemGroup>
-        <Compile Update="Form1.cs">
-            <SubType>Form</SubType>
-        </Compile>
-    </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AjoutAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutEmplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutEntrepot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutFromage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutMouvement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutPermissionDesRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutProducteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutTypeFromage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutZone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
 </Project>
