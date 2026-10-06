@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+<<<<<<< HEAD
+    <Compile Update="Connexion.cs">
+=======
+    <Compile Update="AjoutAchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutCommande.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutEmplacement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutEntrepot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutFromage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutMouvement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutPermission.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutPermissionDesRoles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutProducteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutTypeFromage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="AjoutZone.cs">
+>>>>>>> 7d279cbd44251110fbba9a2519a30d03e9950f10
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+<<<<<<< HEAD
+    <Compile Update="Inscription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PageDepart.cs">
+=======
+    <Compile Update="TableauFromage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="TableauLog.cs">
+>>>>>>> 7d279cbd44251110fbba9a2519a30d03e9950f10
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
