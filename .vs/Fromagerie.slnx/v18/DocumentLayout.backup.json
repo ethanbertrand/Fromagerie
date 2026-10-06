@@ -7,24 +7,20 @@
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|c:\\users\\bossl\\onedrive\\documents\\github\\fromagerie\\fromagerie\\tableaulog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tableaulog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\fromagerie\\tableaulog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tableaulog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|c:\\users\\bossl\\onedrive\\documents\\github\\fromagerie\\fromagerie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|c:\\users\\bossl\\onedrive\\documents\\github\\fromagerie\\fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|c:\\users\\bossl\\onedrive\\documents\\github\\fromagerie\\fromagerie\\tableaufromage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tableaufromage.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|c:\\users\\bossl\\onedrive\\documents\\github\\fromagerie\\fromagerie\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\global.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -44,7 +40,7 @@
               "RelativeDocumentMoniker": "Fromagerie\\Form1.cs",
               "ToolTip": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Form1.cs*",
               "RelativeToolTip": "Fromagerie\\Form1.cs*",
-              "ViewState": "AgIAAEgAAAAAAAAAAAA0wI4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAANoAAAAAAAAAAAAowP4AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-09-29T07:49:47.477Z",
               "IsPinned": true,
@@ -52,7 +48,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Form1.cs [Conception]",
               "DocumentMoniker": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Form1.cs",
               "RelativeDocumentMoniker": "Fromagerie\\Form1.cs",
@@ -69,53 +65,40 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TableauFromage.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauFromage.Designer.cs",
-              "RelativeDocumentMoniker": "Fromagerie\\TableauFromage.Designer.cs",
-              "ToolTip": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauFromage.Designer.cs",
-              "RelativeToolTip": "Fromagerie\\TableauFromage.Designer.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAgwC8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TableauLog.cs",
+              "DocumentMoniker": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauLog.cs",
+              "RelativeDocumentMoniker": "Fromagerie\\TableauLog.cs",
+              "ToolTip": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauLog.cs",
+              "RelativeToolTip": "Fromagerie\\TableauLog.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T08:38:57.423Z",
+              "WhenOpened": "2026-10-06T09:52:13.401Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TableauLog.cs [Conception]",
+              "DocumentMoniker": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauLog.cs",
+              "RelativeDocumentMoniker": "Fromagerie\\TableauLog.cs",
+              "ToolTip": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauLog.cs [Conception]",
+              "RelativeToolTip": "Fromagerie\\TableauLog.cs [Conception]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-06T09:50:37.565Z",
+              "EditorCaption": " [Conception]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "TableauFromage.cs",
               "DocumentMoniker": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauFromage.cs",
               "RelativeDocumentMoniker": "Fromagerie\\TableauFromage.cs",
               "ToolTip": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauFromage.cs",
               "RelativeToolTip": "Fromagerie\\TableauFromage.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAABJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T08:27:03.798Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "TableauFromage.cs [Conception]",
-              "DocumentMoniker": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauFromage.cs",
-              "RelativeDocumentMoniker": "Fromagerie\\TableauFromage.cs",
-              "ToolTip": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\TableauFromage.cs [Conception]",
-              "RelativeToolTip": "Fromagerie\\TableauFromage.cs [Conception]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T08:25:35.733Z",
-              "EditorCaption": " [Conception]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Global.cs",
-              "DocumentMoniker": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Global.cs",
-              "RelativeDocumentMoniker": "Fromagerie\\Global.cs",
-              "ToolTip": "C:\\Users\\BossL\\OneDrive\\Documents\\GitHub\\Fromagerie\\Fromagerie\\Global.cs",
-              "RelativeToolTip": "Fromagerie\\Global.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-06T07:47:52.136Z"
+              "WhenOpened": "2026-10-06T08:27:03.798Z"
             }
           ]
         }

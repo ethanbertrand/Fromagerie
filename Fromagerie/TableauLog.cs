@@ -14,8 +14,8 @@ namespace Fromagerie
         public TableauLog()
         {
             InitializeComponent();
-            LogTB.Dock = DockStyle.Top;          // colle en haut, largeur de la fenêtre
-            LogTB.AutoSize = true;               // la hauteur s'adapte au contenu
+            LogTB.Dock = DockStyle.Top;          
+            LogTB.AutoSize = true;               
             LogTB.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ChargerTableauLog();
         }
@@ -32,7 +32,7 @@ namespace Fromagerie
             using (var connection = new MySqlConnection(Global.ConnectionString))
             using (var adapter = new MySqlDataAdapter("SELECT * FROM Log_utilisateur", connection))
             {
-                adapter.Fill(dt); // ouvre et ferme la connexion automatiquement
+                adapter.Fill(dt); 
             }
 
             LogTB.SuspendLayout();
@@ -41,7 +41,7 @@ namespace Fromagerie
             LogTB.RowStyles.Clear();
 
             LogTB.ColumnCount = dt.Columns.Count;
-            LogTB.RowCount = dt.Rows.Count + 1; // en-tête + données
+            LogTB.RowCount = dt.Rows.Count + 1; 
 
             LogTB.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
 
@@ -50,7 +50,6 @@ namespace Fromagerie
             for (int r = 0; r < LogTB.RowCount; r++)
                 LogTB.RowStyles.Add(new RowStyle(SizeType.AutoSize));
 
-            // En-têtes : noms des champs
             for (int c = 0; c < dt.Columns.Count; c++)
             {
                 var lbl = new Label
@@ -63,7 +62,6 @@ namespace Fromagerie
                 LogTB.Controls.Add(lbl, c, 0);
             }
 
-            // Lignes de la table
             for (int r = 0; r < dt.Rows.Count; r++)
             {
                 for (int c = 0; c < dt.Columns.Count; c++)

@@ -249,5 +249,10 @@ namespace Fromagerie
         {
             Bouton("Fromagerie.TableauFromage");
         }
+
+        private void TableauLogsB_Click(object sender, EventArgs e)
+        {
+            Bouton("Fromagerie.TableauLog");
+        }
     }
 }
