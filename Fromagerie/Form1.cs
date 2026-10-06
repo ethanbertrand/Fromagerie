@@ -128,5 +128,11 @@ namespace Fromagerie
         {
 
         }
+
+        private void PageSignIn_btn_Click(object sender, EventArgs e)
+        {
+            Inscription inscriptionForm = new Inscription();
+            inscriptionForm.ShowDialog();
+        }
     }
 }

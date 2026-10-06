@@ -36,6 +36,7 @@
             TestMDP = new Button();
             InscripUserTb = new TextBox();
             InscripMDPUser = new TextBox();
+            PageSignIn_btn = new Button();
             SuspendLayout();
             // 
             // Inscription
@@ -46,7 +47,7 @@
             Inscription.TabIndex = 0;
             Inscription.Text = "Inscription";
             Inscription.UseVisualStyleBackColor = true;
-            Inscription.Click += this.button1_Click;
+            Inscription.Click += button1_Click;
             // 
             // label1
             // 
@@ -55,7 +56,7 @@
             label1.Size = new Size(126, 20);
             label1.TabIndex = 4;
             label1.Text = "Eure-Et-Loir Fromage";
-            label1.Click += this.label1_Click;
+            label1.Click += label1_Click;
             // 
             // button1
             // 
@@ -66,7 +67,7 @@
             button1.TabIndex = 5;
             button1.Text = "test";
             button1.UseVisualStyleBackColor = true;
-            button1.Click += this.button1_Click_1;
+            button1.Click += button1_Click_1;
             // 
             // NomTB
             // 
@@ -75,7 +76,7 @@
             NomTB.Name = "NomTB";
             NomTB.Size = new Size(110, 23);
             NomTB.TabIndex = 6;
-            NomTB.TextChanged += this.Nom_TextChanged;
+            NomTB.TextChanged += Nom_TextChanged;
             // 
             // mdp
             // 
@@ -94,7 +95,7 @@
             TestMDP.TabIndex = 8;
             TestMDP.Text = "Connexion";
             TestMDP.UseVisualStyleBackColor = true;
-            TestMDP.Click += this.TestMDP_Click;
+            TestMDP.Click += TestMDP_Click;
             // 
             // InscripUserTb
             // 
@@ -114,11 +115,22 @@
             InscripMDPUser.TabIndex = 10;
             InscripMDPUser.TextChanged += InscripMDPUser_TextChanged;
             // 
+            // PageSignIn_btn
+            // 
+            PageSignIn_btn.Location = new Point(792, 511);
+            PageSignIn_btn.Name = "PageSignIn_btn";
+            PageSignIn_btn.Size = new Size(75, 23);
+            PageSignIn_btn.TabIndex = 11;
+            PageSignIn_btn.Text = "Sign in";
+            PageSignIn_btn.UseVisualStyleBackColor = true;
+            PageSignIn_btn.Click += PageSignIn_btn_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1178, 824);
+            Controls.Add(PageSignIn_btn);
             Controls.Add(InscripMDPUser);
             Controls.Add(InscripUserTb);
             Controls.Add(TestMDP);
@@ -129,7 +141,7 @@
             Controls.Add(Inscription);
             Name = "Form1";
             Text = "Form1";
-            Load += this.Form1_Load;
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -144,5 +156,6 @@
         private Button TestMDP;
         private TextBox InscripUserTb;
         private TextBox InscripMDPUser;
+        private Button PageSignIn_btn;
     }
 }
