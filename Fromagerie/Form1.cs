@@ -16,7 +16,7 @@ namespace Fromagerie
             string mdp = BCrypt.Net.BCrypt.HashPassword(InscripMDPUser.Text, workFactor: 12);
             string role = RoleCB.SelectedValue.ToString();
 
-            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString)) 
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -80,45 +80,59 @@ namespace Fromagerie
             string saisieUtilisateur = NomTB.Text;
             string saisieMDP = mdp.Text;
 
-            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
+            try
             {
-                try
+                using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
                 {
                     conn.Open();
-
-                    string query = "SELECT mdp FROM Utilisateur WHERE nom = @Nom";
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+                    int idUtilisateur;
+                    string hashStocke;
+                    string querySelect = "SELECT id, mdp FROM Utilisateur WHERE nom = @Nom";
+                    using (MySqlCommand cmdSelect = new MySqlCommand(querySelect, conn))
                     {
-                        cmd.Parameters.AddWithValue("@Nom", saisieUtilisateur);
+                        cmdSelect.Parameters.AddWithValue("@Nom", saisieUtilisateur);
 
-                        using (MySqlDataReader reader = cmd.ExecuteReader())
+                        using (MySqlDataReader reader = cmdSelect.ExecuteReader())
                         {
-                            if (reader.Read())
+                            if (!reader.Read())
                             {
-                                string hashStocke = reader.GetString("mdp");
-
-                                bool motDePasseValide = BCrypt.Net.BCrypt.Verify(saisieMDP, hashStocke);
-
-                                if (motDePasseValide)
-                                {
-                                    MessageBox.Show("Vous pouvez vous connecter !");
-                                }
-                                else
-                                {
-                                    MessageBox.Show("Nom d'utilisateur ou Mot de passe incorrect.");
-                                }
+                                MessageBox.Show("Nom d'utilisateur ou mot de passe incorrect.");
+                                return;
                             }
-                            else
-                            {
-                                MessageBox.Show("Nom d'utilisateur ou Mot de passe incorrect.");
-                            }
+
+                            idUtilisateur = reader.GetInt32("id");
+                            hashStocke = reader.GetString("mdp");
+                        }
+                    }
+
+                    if (!BCrypt.Net.BCrypt.Verify(saisieMDP, hashStocke))
+                    {
+                        MessageBox.Show("Nom d'utilisateur ou mot de passe incorrect.");
+                        return;
+                    }
+
+                    string queryLog = "INSERT INTO Log_utilisateur (Date_, id_utilisateur) VALUES (@DateConnexion, @IdUtilisateur)";
+                    using (MySqlCommand cmdLog = new MySqlCommand(queryLog, conn))
+                    {
+                        cmdLog.Parameters.AddWithValue("@DateConnexion", DateTime.Now);
+                        cmdLog.Parameters.AddWithValue("@IdUtilisateur", idUtilisateur);
+
+                        int lignesAffectees = cmdLog.ExecuteNonQuery();
+
+                        if (lignesAffectees > 0)
+                        {
+                            MessageBox.Show("Connexion réussie !");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Connexion réussie, mais le log n'a pas pu être enregistré.");
                         }
                     }
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erreur : " + ex.Message);
-                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erreur : " + ex.Message);
             }
         }
 
@@ -229,6 +243,11 @@ namespace Fromagerie
         private void AjoutMouvementB_Click(object sender, EventArgs e)
         {
             Bouton("Fromagerie.AjoutMouvement");
+        }
+
+        private void TableauFromageB_Click(object sender, EventArgs e)
+        {
+            Bouton("Fromagerie.TableauFromage");
         }
     }
 }

@@ -58,3 +58,4 @@ C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0
 C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutZone.resources
 C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutEmplacement.resources
 C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.AjoutMouvement.resources
+C:\Users\BossL\OneDrive\Documents\GitHub\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.TableauFromage.resources
