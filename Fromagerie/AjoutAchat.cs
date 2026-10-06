@@ -11,7 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutAchat : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
 
         public AjoutAchat()
         {
@@ -32,7 +31,7 @@ namespace Fromagerie
 
         private void RemplirCBRole()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -59,7 +58,7 @@ namespace Fromagerie
 
         private void RemplirCBFromage()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -89,7 +88,7 @@ namespace Fromagerie
             string quantite = QuantiteTB.Text;
             string id = CommandeCB.SelectedValue.ToString();
             string id_1 = FromageCB.SelectedValue.ToString();
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

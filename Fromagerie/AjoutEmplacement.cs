@@ -11,7 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutEmplacement : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
 
         public AjoutEmplacement()
         {
@@ -26,7 +25,7 @@ namespace Fromagerie
 
         private void RemplirCBRole()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -56,7 +55,7 @@ namespace Fromagerie
             string nom = CodeTB.Text;
             string capa = CapaciteMaxTB.Text;
             string zone = ZoneCB.SelectedValue.ToString();
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

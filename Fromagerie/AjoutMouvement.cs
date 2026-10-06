@@ -11,7 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutMouvement : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
         public AjoutMouvement()
         {
             InitializeComponent();
@@ -31,7 +30,7 @@ namespace Fromagerie
             string id_3 = Convert.ToString(FromageCB.SelectedValue);
             string id_4 = Convert.ToString(EmplacementCB1.SelectedValue);
             string id_5 = Convert.ToString(EmplacementCB2.SelectedValue);
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -81,7 +80,7 @@ namespace Fromagerie
 
         private void RemplirCBCommande()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -107,7 +106,7 @@ namespace Fromagerie
         }
         private void RemplirCBDeplaceur()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -133,7 +132,7 @@ namespace Fromagerie
         }
         private void RemplirCBFromage()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -160,7 +159,7 @@ namespace Fromagerie
         }
         private void RemplirCBEmplacement1()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -186,7 +185,7 @@ namespace Fromagerie
         }
         private void RemplirCBEmplacement2()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

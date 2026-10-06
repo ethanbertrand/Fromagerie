@@ -4,7 +4,6 @@ namespace Fromagerie
 {
     public partial class Form1 : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
         public Form1()
         {
             InitializeComponent();
@@ -16,7 +15,8 @@ namespace Fromagerie
             string nom = InscripUserTb.Text;
             string mdp = BCrypt.Net.BCrypt.HashPassword(InscripMDPUser.Text, workFactor: 12);
             string role = RoleCB.SelectedValue.ToString();
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString)) 
             {
                 try
                 {
@@ -34,7 +34,6 @@ namespace Fromagerie
                         {
                             MessageBox.Show("Enregistrement ajouté avec succès !");
                         }
-
                     }
                 }
                 catch (Exception ex)
@@ -52,7 +51,7 @@ namespace Fromagerie
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -81,7 +80,7 @@ namespace Fromagerie
             string saisieUtilisateur = NomTB.Text;
             string saisieMDP = mdp.Text;
 
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -149,7 +148,7 @@ namespace Fromagerie
         }
         private void RemplirCBRole()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

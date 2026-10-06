@@ -11,7 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutRole : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
         public AjoutRole()
         {
             InitializeComponent();
@@ -20,7 +19,7 @@ namespace Fromagerie
         private void EnregistrerB_Click(object sender, EventArgs e)
         {
             string libelle = libelleRoleTB.Text;
-            using (MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(connectionString))
+            using (MySql.Data.MySqlClient.MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

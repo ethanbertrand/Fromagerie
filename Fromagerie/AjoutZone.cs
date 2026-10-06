@@ -11,7 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutZone : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
         public AjoutZone()
         {
             InitializeComponent();
@@ -22,7 +21,7 @@ namespace Fromagerie
         {
             string nom = nomTB.Text;
             string id_1 = EntrepotCB.SelectedValue.ToString();
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -52,7 +51,7 @@ namespace Fromagerie
 
         private void RemplirCBEntrepot()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

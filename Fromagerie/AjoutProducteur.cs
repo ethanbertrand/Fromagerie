@@ -11,8 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutProducteur : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
-
         public AjoutProducteur()
         {
             InitializeComponent();
@@ -23,7 +21,7 @@ namespace Fromagerie
             string nom = NomTB.Text;
             string Telephone = TelephoneTB.Text;
             string adresse = AdresseTB.Text;
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

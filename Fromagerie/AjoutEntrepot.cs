@@ -11,7 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutEntrepot : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
 
         public AjoutEntrepot()
         {
@@ -22,7 +21,7 @@ namespace Fromagerie
         {
             string nom = NomTB.Text;
             string nbzone = NbZoneTB.Text;
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

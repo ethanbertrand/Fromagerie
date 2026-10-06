@@ -11,8 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutPermissionDesRoles : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
-
         public AjoutPermissionDesRoles()
         {
             InitializeComponent();
@@ -29,7 +27,7 @@ namespace Fromagerie
         {
             string id = RoleCB.SelectedValue.ToString();
             string id_1 = PermissionCB.SelectedValue.ToString();
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -58,7 +56,7 @@ namespace Fromagerie
 
         private void RemplirCBRole()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
@@ -85,7 +83,7 @@ namespace Fromagerie
 
         private void RemplirCBPermission()
         {
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {

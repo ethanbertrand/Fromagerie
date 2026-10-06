@@ -11,7 +11,6 @@ namespace Fromagerie
 {
     public partial class AjoutPermission : Form
     {
-        private string connectionString = "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
         public AjoutPermission()
         {
             InitializeComponent();
@@ -20,7 +19,7 @@ namespace Fromagerie
         private void Enregistrez_Click(object sender, EventArgs e)
         {
             string libelle = LibelleTB.Text;
-            using (MySqlConnection conn = new MySqlConnection(connectionString))
+            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
