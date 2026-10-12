@@ -50,6 +50,8 @@
             AjoutZoneB = new Button();
             AjoutEmplacementB = new Button();
             AjoutMouvementB = new Button();
+            TableauFromageB = new Button();
+            TableauLogsB = new Button();
             SuspendLayout();
             // 
             // Inscription
@@ -65,7 +67,7 @@
             // 
             // label1
             // 
-            label1.Location = new Point(555, 116);
+            label1.Location = new Point(544, 135);
             label1.Name = "label1";
             label1.Size = new Size(144, 27);
             label1.TabIndex = 4;
@@ -257,11 +259,33 @@
             AjoutMouvementB.UseVisualStyleBackColor = true;
             AjoutMouvementB.Click += AjoutMouvementB_Click;
             // 
+            // TableauFromageB
+            // 
+            TableauFromageB.Location = new Point(555, 966);
+            TableauFromageB.Name = "TableauFromageB";
+            TableauFromageB.Size = new Size(143, 37);
+            TableauFromageB.TabIndex = 25;
+            TableauFromageB.Text = "TableauFromage";
+            TableauFromageB.UseVisualStyleBackColor = true;
+            TableauFromageB.Click += TableauFromageB_Click;
+            // 
+            // TableauLogsB
+            // 
+            TableauLogsB.Location = new Point(772, 966);
+            TableauLogsB.Name = "TableauLogsB";
+            TableauLogsB.Size = new Size(143, 37);
+            TableauLogsB.TabIndex = 26;
+            TableauLogsB.Text = "TableauLogs";
+            TableauLogsB.UseVisualStyleBackColor = true;
+            TableauLogsB.Click += TableauLogsB_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1346, 1099);
+            Controls.Add(TableauLogsB);
+            Controls.Add(TableauFromageB);
             Controls.Add(AjoutMouvementB);
             Controls.Add(AjoutEmplacementB);
             Controls.Add(AjoutZoneB);
@@ -316,5 +340,7 @@
         private Button AjoutZoneB;
         private Button AjoutEmplacementB;
         private Button AjoutMouvementB;
+        private Button TableauFromageB;
+        private Button TableauLogsB;
     }
 }
