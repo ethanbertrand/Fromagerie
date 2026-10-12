@@ -9,7 +9,7 @@ namespace Fromagerie
     {
         // Chaîne de connexion accessible partout
         public static string ConnectionString { get; set; } =
-            "Server=172.16.119.25;Database=fromagerie;Uid=mathias;Pwd=mathias;";
+            "Server=172.16.119.25;Database=fromagerie;Uid=diane;Pwd=zouzou;";
 
         // Exemple : utilisateur connecté
         public static string UtilisateurCourant { get; set; }

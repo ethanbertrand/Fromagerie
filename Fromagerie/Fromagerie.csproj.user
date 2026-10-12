@@ -37,6 +37,9 @@
     <Compile Update="AjoutZone.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Catalog.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
