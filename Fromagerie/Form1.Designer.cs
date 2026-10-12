@@ -52,14 +52,14 @@
             AjoutMouvementB = new Button();
             TableauFromageB = new Button();
             TableauLogsB = new Button();
+            testCatalogBtn = new Button();
             SuspendLayout();
             // 
             // Inscription
             // 
-            Inscription.Location = new Point(920, 470);
-            Inscription.Margin = new Padding(3, 4, 3, 4);
+            Inscription.Location = new Point(805, 352);
             Inscription.Name = "Inscription";
-            Inscription.Size = new Size(115, 55);
+            Inscription.Size = new Size(101, 41);
             Inscription.TabIndex = 0;
             Inscription.Text = "Inscription";
             Inscription.UseVisualStyleBackColor = true;
@@ -67,18 +67,19 @@
             // 
             // label1
             // 
-            label1.Location = new Point(544, 135);
+            label1.Location = new Point(476, 101);
             label1.Name = "label1";
-            label1.Size = new Size(144, 27);
+            label1.Size = new Size(126, 20);
             label1.TabIndex = 4;
             label1.Text = "Eure-Et-Loir Fromage";
             label1.Click += label1_Click;
             // 
             // button1
             // 
-            button1.Location = new Point(126, 90);
+            button1.Location = new Point(110, 68);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(94, 29);
+            button1.Size = new Size(82, 22);
             button1.TabIndex = 5;
             button1.Text = "test";
             button1.UseVisualStyleBackColor = true;
@@ -86,24 +87,27 @@
             // 
             // NomTB
             // 
-            NomTB.Location = new Point(255, 297);
+            NomTB.Location = new Point(223, 223);
+            NomTB.Margin = new Padding(3, 2, 3, 2);
             NomTB.Name = "NomTB";
-            NomTB.Size = new Size(125, 27);
+            NomTB.Size = new Size(110, 23);
             NomTB.TabIndex = 6;
             NomTB.TextChanged += Nom_TextChanged;
             // 
             // mdp
             // 
-            mdp.Location = new Point(255, 357);
+            mdp.Location = new Point(223, 268);
+            mdp.Margin = new Padding(3, 2, 3, 2);
             mdp.Name = "mdp";
-            mdp.Size = new Size(125, 27);
+            mdp.Size = new Size(110, 23);
             mdp.TabIndex = 7;
             // 
             // TestMDP
             // 
-            TestMDP.Location = new Point(266, 448);
+            TestMDP.Location = new Point(233, 336);
+            TestMDP.Margin = new Padding(3, 2, 3, 2);
             TestMDP.Name = "TestMDP";
-            TestMDP.Size = new Size(94, 29);
+            TestMDP.Size = new Size(82, 22);
             TestMDP.TabIndex = 8;
             TestMDP.Text = "Connexion";
             TestMDP.UseVisualStyleBackColor = true;
@@ -111,23 +115,26 @@
             // 
             // InscripUserTb
             // 
-            InscripUserTb.Location = new Point(892, 297);
+            InscripUserTb.Location = new Point(780, 223);
+            InscripUserTb.Margin = new Padding(3, 2, 3, 2);
             InscripUserTb.Name = "InscripUserTb";
-            InscripUserTb.Size = new Size(164, 27);
+            InscripUserTb.Size = new Size(144, 23);
             InscripUserTb.TabIndex = 9;
             // 
             // InscripMDPUser
             // 
-            InscripMDPUser.Location = new Point(910, 339);
+            InscripMDPUser.Location = new Point(796, 254);
+            InscripMDPUser.Margin = new Padding(3, 2, 3, 2);
             InscripMDPUser.Name = "InscripMDPUser";
-            InscripMDPUser.Size = new Size(125, 27);
+            InscripMDPUser.Size = new Size(110, 23);
             InscripMDPUser.TabIndex = 10;
             // 
             // envoiepagefromage
             // 
-            envoiepagefromage.Location = new Point(114, 786);
+            envoiepagefromage.Location = new Point(100, 590);
+            envoiepagefromage.Margin = new Padding(3, 2, 3, 2);
             envoiepagefromage.Name = "envoiepagefromage";
-            envoiepagefromage.Size = new Size(143, 37);
+            envoiepagefromage.Size = new Size(125, 28);
             envoiepagefromage.TabIndex = 11;
             envoiepagefromage.Text = "AjoutFromage";
             envoiepagefromage.UseVisualStyleBackColor = true;
@@ -135,9 +142,10 @@
             // 
             // AjoutAchatB
             // 
-            AjoutAchatB.Location = new Point(331, 786);
+            AjoutAchatB.Location = new Point(290, 590);
+            AjoutAchatB.Margin = new Padding(3, 2, 3, 2);
             AjoutAchatB.Name = "AjoutAchatB";
-            AjoutAchatB.Size = new Size(143, 37);
+            AjoutAchatB.Size = new Size(125, 28);
             AjoutAchatB.TabIndex = 12;
             AjoutAchatB.Text = "AjoutAchat";
             AjoutAchatB.UseVisualStyleBackColor = true;
@@ -145,16 +153,17 @@
             // 
             // label2
             // 
-            label2.Location = new Point(253, 230);
+            label2.Location = new Point(221, 172);
             label2.Name = "label2";
-            label2.Size = new Size(144, 27);
+            label2.Size = new Size(126, 20);
             label2.TabIndex = 13;
             // 
             // AjoutCommandeB
             // 
-            AjoutCommandeB.Location = new Point(555, 786);
+            AjoutCommandeB.Location = new Point(486, 590);
+            AjoutCommandeB.Margin = new Padding(3, 2, 3, 2);
             AjoutCommandeB.Name = "AjoutCommandeB";
-            AjoutCommandeB.Size = new Size(143, 37);
+            AjoutCommandeB.Size = new Size(125, 28);
             AjoutCommandeB.TabIndex = 14;
             AjoutCommandeB.Text = "AjoutCommande";
             AjoutCommandeB.UseVisualStyleBackColor = true;
@@ -162,9 +171,10 @@
             // 
             // AjoutRoleB
             // 
-            AjoutRoleB.Location = new Point(772, 786);
+            AjoutRoleB.Location = new Point(676, 590);
+            AjoutRoleB.Margin = new Padding(3, 2, 3, 2);
             AjoutRoleB.Name = "AjoutRoleB";
-            AjoutRoleB.Size = new Size(143, 37);
+            AjoutRoleB.Size = new Size(125, 28);
             AjoutRoleB.TabIndex = 15;
             AjoutRoleB.Text = "AjoutRole";
             AjoutRoleB.UseVisualStyleBackColor = true;
@@ -173,17 +183,19 @@
             // RoleCB
             // 
             RoleCB.FormattingEnabled = true;
-            RoleCB.Location = new Point(903, 413);
+            RoleCB.Location = new Point(790, 310);
+            RoleCB.Margin = new Padding(3, 2, 3, 2);
             RoleCB.Name = "RoleCB";
-            RoleCB.Size = new Size(153, 28);
+            RoleCB.Size = new Size(134, 23);
             RoleCB.TabIndex = 16;
             RoleCB.SelectedIndexChanged += RoleCB_SelectedIndexChanged;
             // 
             // AjoutTypeFromageB
             // 
-            AjoutTypeFromageB.Location = new Point(968, 786);
+            AjoutTypeFromageB.Location = new Point(847, 590);
+            AjoutTypeFromageB.Margin = new Padding(3, 2, 3, 2);
             AjoutTypeFromageB.Name = "AjoutTypeFromageB";
-            AjoutTypeFromageB.Size = new Size(143, 37);
+            AjoutTypeFromageB.Size = new Size(125, 28);
             AjoutTypeFromageB.TabIndex = 17;
             AjoutTypeFromageB.Text = "AjoutTypeFromage";
             AjoutTypeFromageB.UseVisualStyleBackColor = true;
@@ -191,9 +203,10 @@
             // 
             // AjoutProducteur
             // 
-            AjoutProducteur.Location = new Point(114, 880);
+            AjoutProducteur.Location = new Point(100, 660);
+            AjoutProducteur.Margin = new Padding(3, 2, 3, 2);
             AjoutProducteur.Name = "AjoutProducteur";
-            AjoutProducteur.Size = new Size(143, 37);
+            AjoutProducteur.Size = new Size(125, 28);
             AjoutProducteur.TabIndex = 18;
             AjoutProducteur.Text = "AjoutProducteurB";
             AjoutProducteur.UseVisualStyleBackColor = true;
@@ -201,9 +214,10 @@
             // 
             // button2
             // 
-            button2.Location = new Point(331, 880);
+            button2.Location = new Point(290, 660);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(143, 37);
+            button2.Size = new Size(125, 28);
             button2.TabIndex = 19;
             button2.Text = "AjoutPermission";
             button2.UseVisualStyleBackColor = true;
@@ -211,9 +225,10 @@
             // 
             // AjoutPermissionDesRolesB
             // 
-            AjoutPermissionDesRolesB.Location = new Point(525, 880);
+            AjoutPermissionDesRolesB.Location = new Point(459, 660);
+            AjoutPermissionDesRolesB.Margin = new Padding(3, 2, 3, 2);
             AjoutPermissionDesRolesB.Name = "AjoutPermissionDesRolesB";
-            AjoutPermissionDesRolesB.Size = new Size(188, 37);
+            AjoutPermissionDesRolesB.Size = new Size(164, 28);
             AjoutPermissionDesRolesB.TabIndex = 20;
             AjoutPermissionDesRolesB.Text = "AjoutPermissionDesRoles";
             AjoutPermissionDesRolesB.UseVisualStyleBackColor = true;
@@ -221,9 +236,10 @@
             // 
             // AjoutEntrepotB
             // 
-            AjoutEntrepotB.Location = new Point(779, 877);
+            AjoutEntrepotB.Location = new Point(682, 658);
+            AjoutEntrepotB.Margin = new Padding(3, 2, 3, 2);
             AjoutEntrepotB.Name = "AjoutEntrepotB";
-            AjoutEntrepotB.Size = new Size(136, 40);
+            AjoutEntrepotB.Size = new Size(119, 30);
             AjoutEntrepotB.TabIndex = 21;
             AjoutEntrepotB.Text = "AjoutEntrepot";
             AjoutEntrepotB.UseVisualStyleBackColor = true;
@@ -231,9 +247,10 @@
             // 
             // AjoutZoneB
             // 
-            AjoutZoneB.Location = new Point(968, 880);
+            AjoutZoneB.Location = new Point(847, 660);
+            AjoutZoneB.Margin = new Padding(3, 2, 3, 2);
             AjoutZoneB.Name = "AjoutZoneB";
-            AjoutZoneB.Size = new Size(136, 40);
+            AjoutZoneB.Size = new Size(119, 30);
             AjoutZoneB.TabIndex = 22;
             AjoutZoneB.Text = "AjoutZone";
             AjoutZoneB.UseVisualStyleBackColor = true;
@@ -241,9 +258,10 @@
             // 
             // AjoutEmplacementB
             // 
-            AjoutEmplacementB.Location = new Point(114, 966);
+            AjoutEmplacementB.Location = new Point(100, 724);
+            AjoutEmplacementB.Margin = new Padding(3, 2, 3, 2);
             AjoutEmplacementB.Name = "AjoutEmplacementB";
-            AjoutEmplacementB.Size = new Size(149, 37);
+            AjoutEmplacementB.Size = new Size(130, 28);
             AjoutEmplacementB.TabIndex = 23;
             AjoutEmplacementB.Text = "AjoutEmplacement";
             AjoutEmplacementB.UseVisualStyleBackColor = true;
@@ -251,9 +269,10 @@
             // 
             // AjoutMouvementB
             // 
-            AjoutMouvementB.Location = new Point(331, 966);
+            AjoutMouvementB.Location = new Point(290, 724);
+            AjoutMouvementB.Margin = new Padding(3, 2, 3, 2);
             AjoutMouvementB.Name = "AjoutMouvementB";
-            AjoutMouvementB.Size = new Size(143, 37);
+            AjoutMouvementB.Size = new Size(125, 28);
             AjoutMouvementB.TabIndex = 24;
             AjoutMouvementB.Text = "AjoutMouvement";
             AjoutMouvementB.UseVisualStyleBackColor = true;
@@ -261,9 +280,10 @@
             // 
             // TableauFromageB
             // 
-            TableauFromageB.Location = new Point(555, 966);
+            TableauFromageB.Location = new Point(486, 724);
+            TableauFromageB.Margin = new Padding(3, 2, 3, 2);
             TableauFromageB.Name = "TableauFromageB";
-            TableauFromageB.Size = new Size(143, 37);
+            TableauFromageB.Size = new Size(125, 28);
             TableauFromageB.TabIndex = 25;
             TableauFromageB.Text = "TableauFromage";
             TableauFromageB.UseVisualStyleBackColor = true;
@@ -271,19 +291,31 @@
             // 
             // TableauLogsB
             // 
-            TableauLogsB.Location = new Point(772, 966);
+            TableauLogsB.Location = new Point(676, 724);
+            TableauLogsB.Margin = new Padding(3, 2, 3, 2);
             TableauLogsB.Name = "TableauLogsB";
-            TableauLogsB.Size = new Size(143, 37);
+            TableauLogsB.Size = new Size(125, 28);
             TableauLogsB.TabIndex = 26;
             TableauLogsB.Text = "TableauLogs";
             TableauLogsB.UseVisualStyleBackColor = true;
             TableauLogsB.Click += TableauLogsB_Click;
             // 
+            // testCatalogBtn
+            // 
+            testCatalogBtn.Location = new Point(847, 729);
+            testCatalogBtn.Name = "testCatalogBtn";
+            testCatalogBtn.Size = new Size(119, 23);
+            testCatalogBtn.TabIndex = 27;
+            testCatalogBtn.Text = "TestCalogue";
+            testCatalogBtn.UseVisualStyleBackColor = true;
+            testCatalogBtn.Click += button3_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1346, 1099);
+            ClientSize = new Size(1178, 824);
+            Controls.Add(testCatalogBtn);
             Controls.Add(TableauLogsB);
             Controls.Add(TableauFromageB);
             Controls.Add(AjoutMouvementB);
@@ -308,7 +340,6 @@
             Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(Inscription);
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;
@@ -342,5 +373,6 @@
         private Button AjoutMouvementB;
         private Button TableauFromageB;
         private Button TableauLogsB;
+        private Button testCatalogBtn;
     }
 }

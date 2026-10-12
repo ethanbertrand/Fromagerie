@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fromagerie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7d279cbd44251110fbba9a2519a30d03e9950f10")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf2f64dfb6cfb05cac36ab4cbcbc9bf2bf8473a2")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fromagerie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fromagerie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

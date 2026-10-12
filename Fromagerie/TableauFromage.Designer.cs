@@ -35,23 +35,26 @@
             // 
             fromagetb.AutoScroll = true;
             fromagetb.ColumnCount = 2;
-            fromagetb.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            fromagetb.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            fromagetb.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 49.76923F));
+            fromagetb.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50.23077F));
             fromagetb.Dock = DockStyle.Fill;
             fromagetb.Location = new Point(0, 0);
+            fromagetb.Margin = new Padding(3, 2, 3, 2);
             fromagetb.Name = "fromagetb";
             fromagetb.RowCount = 2;
             fromagetb.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             fromagetb.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            fromagetb.Size = new Size(1486, 1073);
+            fromagetb.Size = new Size(692, 805);
             fromagetb.TabIndex = 0;
+            fromagetb.Paint += fromagetb_Paint;
             // 
             // TableauFromage
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1486, 1073);
+            ClientSize = new Size(692, 805);
             Controls.Add(fromagetb);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "TableauFromage";
             Text = "TableauFromage";
             ResumeLayout(false);

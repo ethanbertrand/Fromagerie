@@ -254,5 +254,10 @@ namespace Fromagerie
         {
             Bouton("Fromagerie.TableauLog");
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Bouton("Fromagerie.TCatalog");
+        }
     }
 }

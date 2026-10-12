@@ -72,5 +72,10 @@ namespace Fromagerie
 
             fromagetb.ResumeLayout();
         }
+
+        private void fromagetb_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
