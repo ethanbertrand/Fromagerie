@@ -35,12 +35,12 @@ namespace Fromagerie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Bouton("Fromagerie.Connexion");
+            
         }
 
         private void signUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Bouton("Fromagerie.Inscription");
+            Bouton("Fromagerie.Connexion");
         }
 
     }
