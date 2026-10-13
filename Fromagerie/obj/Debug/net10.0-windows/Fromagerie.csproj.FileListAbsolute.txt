@@ -109,3 +109,4 @@ D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\ref
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageVendeur.resources
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageAcheteur.resources
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageAdmin.resources
+D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.Histoire.resources

@@ -36,24 +36,26 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(165, 162);
+            label1.Location = new Point(144, 122);
             label1.Name = "label1";
-            label1.Size = new Size(97, 20);
+            label1.Size = new Size(77, 15);
             label1.TabIndex = 0;
             label1.Text = "Nom du Role";
             // 
             // libelleRoleTB
             // 
-            libelleRoleTB.Location = new Point(152, 218);
+            libelleRoleTB.Location = new Point(133, 164);
+            libelleRoleTB.Margin = new Padding(3, 2, 3, 2);
             libelleRoleTB.Name = "libelleRoleTB";
-            libelleRoleTB.Size = new Size(125, 27);
+            libelleRoleTB.Size = new Size(110, 23);
             libelleRoleTB.TabIndex = 1;
             // 
             // EnregistrerB
             // 
-            EnregistrerB.Location = new Point(329, 324);
+            EnregistrerB.Location = new Point(133, 231);
+            EnregistrerB.Margin = new Padding(3, 2, 3, 2);
             EnregistrerB.Name = "EnregistrerB";
-            EnregistrerB.Size = new Size(91, 44);
+            EnregistrerB.Size = new Size(80, 33);
             EnregistrerB.TabIndex = 2;
             EnregistrerB.Text = "Enregistrer";
             EnregistrerB.UseVisualStyleBackColor = true;
@@ -61,12 +63,13 @@
             // 
             // AjoutRole
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1001, 646);
+            ClientSize = new Size(876, 484);
             Controls.Add(EnregistrerB);
             Controls.Add(libelleRoleTB);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AjoutRole";
             Text = "AjoutRole";
             ResumeLayout(false);

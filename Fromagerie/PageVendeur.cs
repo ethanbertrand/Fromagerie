@@ -19,5 +19,12 @@ namespace Fromagerie
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form1 page = new Form1();
+            page.Show();
+            this.Hide();
+        }
     }
 }

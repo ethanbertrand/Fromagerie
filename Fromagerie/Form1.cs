@@ -155,7 +155,7 @@ namespace Fromagerie
                         page.Show();
                         this.Hide();
                     }
-                    
+
                     else if (role == "Acheteur")
                     {
                         PageAcheteur page = new PageAcheteur();
@@ -297,6 +297,16 @@ namespace Fromagerie
         private void TableauLogsB_Click(object sender, EventArgs e)
         {
             Bouton("Fromagerie.TableauLog");
+        }
+
+        private void InscripUserTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InscripMDPUser_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
