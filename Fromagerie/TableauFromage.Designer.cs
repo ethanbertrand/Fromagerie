@@ -61,7 +61,6 @@
         }
 
         #endregion
-
         private TableLayoutPanel fromagetb;
     }
 }

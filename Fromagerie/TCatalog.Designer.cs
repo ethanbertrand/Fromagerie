@@ -28,22 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            catalog = new TableLayoutPanel();
+            catalog = new FlowLayoutPanel();
             SuspendLayout();
             // 
             // catalog
             // 
-            catalog.ColumnCount = 2;
-            catalog.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            catalog.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
             catalog.Location = new Point(12, 12);
             catalog.Name = "catalog";
-            catalog.RowCount = 2;
-            catalog.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            catalog.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             catalog.Size = new Size(776, 426);
             catalog.TabIndex = 0;
-            catalog.Paint += catalog_Paint;
             // 
             // TCatalog
             // 
@@ -57,11 +50,8 @@
             ResumeLayout(false);
         }
 
-
-
-
         #endregion
 
-        private TableLayoutPanel catalog;
+        private FlowLayoutPanel catalog;
     }
 }

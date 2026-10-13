@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|d:\\users\\zhou\\projets\\fromagerie\\fromagerie\\tcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|D:\\users\\zhou\\Projets\\Fromagerie\\fromagerie\\tcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tcatalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|d:\\users\\zhou\\projets\\fromagerie\\fromagerie\\tcatalog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tcatalog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|D:\\users\\zhou\\Projets\\Fromagerie\\fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|d:\\users\\zhou\\projets\\fromagerie\\fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,19 +27,11 @@
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|d:\\users\\zhou\\projets\\fromagerie\\fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tableaufromage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|d:\\users\\zhou\\projets\\fromagerie\\fromagerie\\tcatalog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\tcatalog.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|D:\\users\\zhou\\Projets\\Fromagerie\\fromagerie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|d:\\users\\zhou\\projets\\fromagerie\\fromagerie\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|D:\\users\\zhou\\Projets\\Fromagerie\\fromagerie\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DDFEFA61-17EA-4800-C7D1-DA967A99C6CF}|Fromagerie\\Fromagerie.csproj|solutionrelative:fromagerie\\catalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -50,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\Form1.cs",
               "RelativeDocumentMoniker": "Fromagerie\\Form1.cs",
@@ -83,14 +83,14 @@
               "RelativeDocumentMoniker": "Fromagerie\\TCatalog.cs",
               "ToolTip": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\TCatalog.cs",
               "RelativeToolTip": "Fromagerie\\TCatalog.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwCgAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowBQAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T14:45:36.363Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "TableauFromage.cs [Conception]",
               "DocumentMoniker": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\TableauFromage.cs",
               "RelativeDocumentMoniker": "Fromagerie\\TableauFromage.cs",
@@ -114,13 +114,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "TCatalog.Designer.cs",
               "DocumentMoniker": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\TCatalog.Designer.cs",
               "RelativeDocumentMoniker": "Fromagerie\\TCatalog.Designer.cs",
               "ToolTip": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\TCatalog.Designer.cs",
               "RelativeToolTip": "Fromagerie\\TCatalog.Designer.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAmwC4AAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAmwCcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-12T09:13:23.532Z",
               "EditorCaption": ""
@@ -134,8 +134,7 @@
               "ToolTip": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\Catalog.cs [Conception]",
               "RelativeToolTip": "Fromagerie\\Catalog.cs [Conception]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-12T08:58:57.517Z",
-              "EditorCaption": " [Conception]"
+              "WhenOpened": "2026-10-12T08:58:57.517Z"
             },
             {
               "$type": "Document",
@@ -152,13 +151,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "TableauFromage.cs",
               "DocumentMoniker": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\TableauFromage.cs",
               "RelativeDocumentMoniker": "Fromagerie\\TableauFromage.cs",
               "ToolTip": "D:\\users\\zhou\\Projets\\Fromagerie\\Fromagerie\\TableauFromage.cs",
               "RelativeToolTip": "Fromagerie\\TableauFromage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-06T08:27:03.798Z",
               "EditorCaption": ""

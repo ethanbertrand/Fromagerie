@@ -77,5 +77,10 @@ namespace Fromagerie
         {
 
         }
+
+        private void catalog_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

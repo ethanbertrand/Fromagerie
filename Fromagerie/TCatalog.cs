@@ -17,10 +17,11 @@ namespace Fromagerie
             catalog.Dock = DockStyle.Top;          // colle en haut, largeur de la fenêtre
             catalog.AutoSize = true;               // la hauteur s'adapte au contenu
             catalog.AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ChargerTableauFromage();
+            ChargerTypesFromages();
+            
         }
 
-        private void ChargerTableauFromage()
+        private void ChargerTypesFromages()
         {
             DataTable dt = new DataTable();
 
@@ -32,49 +33,33 @@ namespace Fromagerie
 
             catalog.SuspendLayout();
             catalog.Controls.Clear();
-            catalog.ColumnStyles.Clear();
-            catalog.RowStyles.Clear();
+            
 
-            catalog.ColumnCount = dt.Columns.Count;
-            catalog.RowCount = dt.Rows.Count + 1; // en-tête + données
-
-            catalog.CellBorderStyle = TableLayoutPanelCellBorderStyle.Single;
-
-            for (int c = 0; c < dt.Columns.Count; c++)
-                catalog.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100f / dt.Columns.Count));
-            for (int r = 0; r < catalog.RowCount; r++)
-                catalog.RowStyles.Add(new RowStyle(SizeType.AutoSize));
-
-            // En-têtes : noms des champs
-            for (int c = 0; c < dt.Columns.Count; c++)
+            foreach (DataRow row in dt.Rows)
             {
-                var lbl = new Label
+                var btn = new Button
                 {
-                    Text = dt.Columns[c].ColumnName,
-                    Font = new Font(Font, FontStyle.Bold),
+                    Text = $"{row["nom"]} - {row["Poids"]} g", 
                     AutoSize = true,
-                    Anchor = AnchorStyles.Left
+                    AutoSizeMode = AutoSizeMode.GrowAndShrink,
+                    Padding = new Padding(10, 5, 10, 5),
+                    Margin = new Padding(5),
+                    Tag = row["nom"] 
                 };
-                catalog.Controls.Add(lbl, c, 0);
-            }
-
-            // Lignes de la table
-            for (int r = 0; r < dt.Rows.Count; r++)
-            {
-                for (int c = 0; c < dt.Columns.Count; c++)
-                {
-                    var lbl = new Label
-                    {
-                        Text = dt.Rows[r][c]?.ToString(),
-                        AutoSize = true,
-                        Anchor = AnchorStyles.Left
-                    };
-                    catalog.Controls.Add(lbl, c, r + 1);
-                }
+                btn.Click += BoutonFromage_Click;
+                catalog.Controls.Add(btn);
             }
 
             catalog.ResumeLayout();
         }
+
+        private void BoutonFromage_Click(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+            string nom = btn.Tag.ToString();
+        }
+
+       
 
         private void TCatalog_Load(object sender, EventArgs e)
         {
