@@ -53,6 +53,7 @@
             TableauFromageB = new Button();
             TableauLogsB = new Button();
             testCatalogBtn = new Button();
+            button3 = new Button();
             SuspendLayout();
             // 
             // Inscription
@@ -120,6 +121,7 @@
             InscripUserTb.Name = "InscripUserTb";
             InscripUserTb.Size = new Size(144, 23);
             InscripUserTb.TabIndex = 9;
+            InscripUserTb.TextChanged += InscripUserTb_TextChanged;
             // 
             // InscripMDPUser
             // 
@@ -128,6 +130,7 @@
             InscripMDPUser.Name = "InscripMDPUser";
             InscripMDPUser.Size = new Size(110, 23);
             InscripMDPUser.TabIndex = 10;
+            InscripMDPUser.TextChanged += InscripMDPUser_TextChanged;
             // 
             // envoiepagefromage
             // 
@@ -310,11 +313,22 @@
             testCatalogBtn.UseVisualStyleBackColor = true;
             testCatalogBtn.Click += button3_Click;
             // 
+            // button3
+            // 
+            button3.Location = new Point(871, 776);
+            button3.Name = "button3";
+            button3.Size = new Size(75, 23);
+            button3.TabIndex = 28;
+            button3.Text = "testpageDepage";
+            button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click_1;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1178, 824);
+            Controls.Add(button3);
             Controls.Add(testCatalogBtn);
             Controls.Add(TableauLogsB);
             Controls.Add(TableauFromageB);
@@ -374,5 +388,6 @@
         private Button TableauFromageB;
         private Button TableauLogsB;
         private Button testCatalogBtn;
+        private Button button3;
     }
 }

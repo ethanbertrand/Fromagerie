@@ -259,5 +259,20 @@ namespace Fromagerie
         {
             Bouton("Fromagerie.TCatalog");
         }
+
+        private void InscripUserTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void InscripMDPUser_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            Bouton("Fromagerie.PageDepart");
+        }
     }
 }
