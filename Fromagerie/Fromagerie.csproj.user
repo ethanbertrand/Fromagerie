@@ -40,6 +40,15 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PageAcheteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PageAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="PageVendeur.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TableauFromage.cs">
       <SubType>Form</SubType>
     </Compile>

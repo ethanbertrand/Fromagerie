@@ -77,56 +77,100 @@ namespace Fromagerie
 
         private void TestMDP_Click(object sender, EventArgs e)
         {
-            string saisieUtilisateur = NomTB.Text;
+            string saisieUtilisateur = NomTB.Text.Trim();
             string saisieMDP = mdp.Text;
 
             try
             {
-                using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
+                using (MySqlConnection conn =
+                       new MySqlConnection(Global.ConnectionString))
                 {
                     conn.Open();
+
                     int idUtilisateur;
                     string hashStocke;
-                    string querySelect = "SELECT id, mdp FROM Utilisateur WHERE nom = @Nom";
-                    using (MySqlCommand cmdSelect = new MySqlCommand(querySelect, conn))
-                    {
-                        cmdSelect.Parameters.AddWithValue("@Nom", saisieUtilisateur);
+                    string role;
 
-                        using (MySqlDataReader reader = cmdSelect.ExecuteReader())
+                    string querySelect = @"
+                SELECT Utilisateur.id,
+                       Utilisateur.mdp,
+                       Role.libelle
+                FROM Utilisateur
+                LEFT JOIN Role
+                    ON Role.id = Utilisateur.id_1
+                WHERE Utilisateur.nom = @Nom";
+
+                    using (MySqlCommand cmdSelect =
+                           new MySqlCommand(querySelect, conn))
+                    {
+                        cmdSelect.Parameters.AddWithValue(
+                            "@Nom", saisieUtilisateur);
+
+                        using (MySqlDataReader reader =
+                               cmdSelect.ExecuteReader())
                         {
                             if (!reader.Read())
                             {
-                                MessageBox.Show("Nom d'utilisateur ou mot de passe incorrect.");
+                                MessageBox.Show(
+                                    "Nom d'utilisateur ou mot de passe incorrect.");
                                 return;
                             }
 
                             idUtilisateur = reader.GetInt32("id");
                             hashStocke = reader.GetString("mdp");
+                            role = reader["libelle"].ToString();
                         }
                     }
 
+                    // Vérifier le mot de passe
                     if (!BCrypt.Net.BCrypt.Verify(saisieMDP, hashStocke))
                     {
-                        MessageBox.Show("Nom d'utilisateur ou mot de passe incorrect.");
+                        MessageBox.Show(
+                            "Nom d'utilisateur ou mot de passe incorrect.");
                         return;
                     }
 
-                    string queryLog = "INSERT INTO Log_utilisateur (Date_, id_utilisateur) VALUES (@DateConnexion, @IdUtilisateur)";
-                    using (MySqlCommand cmdLog = new MySqlCommand(queryLog, conn))
+                    string queryLog = @"
+                INSERT INTO Log_utilisateur
+                    (Date_, id_utilisateur)
+                VALUES
+                    (@DateConnexion, @IdUtilisateur)";
+
+                    using (MySqlCommand cmdLog =
+                           new MySqlCommand(queryLog, conn))
                     {
-                        cmdLog.Parameters.AddWithValue("@DateConnexion", DateTime.Now);
-                        cmdLog.Parameters.AddWithValue("@IdUtilisateur", idUtilisateur);
+                        cmdLog.Parameters.AddWithValue(
+                            "@DateConnexion", DateTime.Now);
 
-                        int lignesAffectees = cmdLog.ExecuteNonQuery();
+                        cmdLog.Parameters.AddWithValue(
+                            "@IdUtilisateur", idUtilisateur);
 
-                        if (lignesAffectees > 0)
-                        {
-                            MessageBox.Show("Connexion réussie !");
-                        }
-                        else
-                        {
-                            MessageBox.Show("Connexion réussie, mais le log n'a pas pu être enregistré.");
-                        }
+                        cmdLog.ExecuteNonQuery();
+                    }
+
+
+                    if (role == "Vendeur")
+                    {
+                        PageVendeur page = new PageVendeur();
+                        page.Show();
+                        this.Hide();
+                    }
+                    
+                    else if (role == "Acheteur")
+                    {
+                        PageAcheteur page = new PageAcheteur();
+                        page.Show();
+                        this.Hide();
+                    }
+                    else if (role == "Admin")
+                    {
+                        PageAdmin page = new PageAdmin();
+                        page.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Rôle non reconnu : " + role);
                     }
                 }
             }
