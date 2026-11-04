@@ -1,6 +1,6 @@
 namespace Fromagerie
 {
-    partial class PageAcheteur
+    partial class PageAjoutCommande
     {
         /// <summary>
         /// Required designer variable.
@@ -73,7 +73,7 @@ namespace Fromagerie
             label2.Text = "Vous avez le catalogue à dispositions avec le fromage ainsi que son prix au kilo. Vous n'avez juste qu'à faire votre choix !";
             label2.Click += label2_Click;
             // 
-            // PageAcheteur
+            // PageAjoutCommande
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -82,8 +82,9 @@ namespace Fromagerie
             Controls.Add(deconnexion);
             Controls.Add(histoire);
             Controls.Add(label1);
-            Name = "PageAcheteur";
+            Name = "PageAjoutCommande";
             Text = "PageAcheteur";
+            Load += PageAjoutCommande_Load;
             ResumeLayout(false);
             PerformLayout();
         }

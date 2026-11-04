@@ -1,4 +1,4 @@
-﻿namespace Fromagerie
+namespace Fromagerie
 {
     partial class Form1
     {
@@ -159,6 +159,7 @@
             label2.Name = "label2";
             label2.Size = new Size(126, 20);
             label2.TabIndex = 13;
+            label2.Click += label2_Click;
             // 
             // AjoutCommandeB
             // 

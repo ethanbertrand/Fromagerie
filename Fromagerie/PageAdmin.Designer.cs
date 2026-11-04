@@ -1,4 +1,4 @@
-﻿namespace Fromagerie
+namespace Fromagerie
 {
     partial class PageAdmin
     {
@@ -34,6 +34,8 @@
             UnInscripMDPUser = new TextBox();
             RoleCB = new ComboBox();
             button2 = new Button();
+            pagevendeur = new Button();
+            PageAcheteur = new Button();
             SuspendLayout();
             // 
             // label1
@@ -85,7 +87,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(291, 379);
+            button2.Location = new Point(322, 387);
             button2.Name = "button2";
             button2.Size = new Size(112, 36);
             button2.TabIndex = 19;
@@ -93,11 +95,27 @@
             button2.UseVisualStyleBackColor = true;
             button2.Click += button2_Click;
             // 
+            // pagevendeur
+            // 
+            pagevendeur.Location = new Point(507, 158);
+            pagevendeur.Name = "pagevendeur";
+            pagevendeur.Size = new Size(128, 52);
+            pagevendeur.TabIndex = 20;
+            pagevendeur.Text = "Page Vendeur";
+            pagevendeur.UseVisualStyleBackColor = true;
+            pagevendeur.Click += pagevendeur_Click;
+            // 
+            // PageAcheteur
+            // 
+     
+            // 
             // PageAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(PageAcheteur);
+            Controls.Add(pagevendeur);
             Controls.Add(button2);
             Controls.Add(RoleCB);
             Controls.Add(UnInscripMDPUser);
@@ -119,5 +137,7 @@
         private TextBox UnInscripMDPUser;
         private ComboBox RoleCB;
         private Button button2;
+        private Button pagevendeur;
+        private Button PageAcheteur;
     }
 }

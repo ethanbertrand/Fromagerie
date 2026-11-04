@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +17,7 @@ namespace Fromagerie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            PageAcheteur page = new PageAcheteur();
+            PageAjoutCommande page = new PageAjoutCommande();
             page.Show();
             this.Hide();
         }

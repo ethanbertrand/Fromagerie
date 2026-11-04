@@ -107,6 +107,7 @@ D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fro
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.genruntimeconfig.cache
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\ref\Fromagerie.dll
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageVendeur.resources
-D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageAcheteur.resources
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageAdmin.resources
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.Histoire.resources
+D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageAjoutCommande.resources
+D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.VueCommande.resources

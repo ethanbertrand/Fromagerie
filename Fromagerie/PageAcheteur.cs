@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Fromagerie
 {
-    public partial class PageAcheteur : Form
+    public partial class PageAjoutCommande : Form
     {
-        public PageAcheteur()
+        public PageAjoutCommande()
         {
             InitializeComponent();
         }
@@ -30,6 +30,11 @@ namespace Fromagerie
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PageAjoutCommande_Load(object sender, EventArgs e)
         {
 
         }

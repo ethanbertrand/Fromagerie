@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -105,6 +105,7 @@ namespace Fromagerie
                         if (lignesAffectees > 0)
                         {
                             MessageBox.Show("Enregistrement ajouté avec succès !");
+
                         }
 
                     }
@@ -114,6 +115,23 @@ namespace Fromagerie
                     MessageBox.Show("Erreur : " + ex.Message);
                 }
             }
+        }
+
+        private PageVendeur PageVendeur()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PageVendeur page = new PageVendeur();
+            page.Show();
+            this.Hide();
+        }
+
+        private void AjoutCommande_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

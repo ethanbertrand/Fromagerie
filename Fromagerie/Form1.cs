@@ -158,7 +158,7 @@ namespace Fromagerie
 
                     else if (role == "Acheteur")
                     {
-                        PageAcheteur page = new PageAcheteur();
+                        PageAjoutCommande page = new PageAjoutCommande();
                         page.Show();
                         this.Hide();
                     }
@@ -314,6 +314,9 @@ namespace Fromagerie
 
         }
 
-        
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

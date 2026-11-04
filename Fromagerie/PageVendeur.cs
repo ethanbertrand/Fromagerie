@@ -1,10 +1,12 @@
-﻿using System;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Fromagerie
 {
@@ -27,9 +29,21 @@ namespace Fromagerie
             this.Hide();
         }
 
-        
+        private void AjoutCommande_Click(object sender, EventArgs e)
+        {
+            AjoutCommande page = new AjoutCommande();
+            page.Show();
+            this.Hide();
+        }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void VoirCommande_Click(object sender, EventArgs e)
+        {
+            VueCommande page = new VueCommande();
+            page.Show();
+            this.Hide();
+        }
+
+        private void pageadmin_Click(object sender, EventArgs e)
         {
             
         }
