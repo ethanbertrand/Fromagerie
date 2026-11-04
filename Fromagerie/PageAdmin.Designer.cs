@@ -35,7 +35,6 @@ namespace Fromagerie
             RoleCB = new ComboBox();
             button2 = new Button();
             pagevendeur = new Button();
-            PageAcheteur = new Button();
             SuspendLayout();
             // 
             // label1
@@ -97,7 +96,7 @@ namespace Fromagerie
             // 
             // pagevendeur
             // 
-            pagevendeur.Location = new Point(507, 158);
+            pagevendeur.Location = new Point(506, 171);
             pagevendeur.Name = "pagevendeur";
             pagevendeur.Size = new Size(128, 52);
             pagevendeur.TabIndex = 20;
@@ -105,16 +104,11 @@ namespace Fromagerie
             pagevendeur.UseVisualStyleBackColor = true;
             pagevendeur.Click += pagevendeur_Click;
             // 
-            // PageAcheteur
-            // 
-     
-            // 
             // PageAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
-            Controls.Add(PageAcheteur);
             Controls.Add(pagevendeur);
             Controls.Add(button2);
             Controls.Add(RoleCB);
@@ -138,6 +132,5 @@ namespace Fromagerie
         private ComboBox RoleCB;
         private Button button2;
         private Button pagevendeur;
-        private Button PageAcheteur;
     }
 }

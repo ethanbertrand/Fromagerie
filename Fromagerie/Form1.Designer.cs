@@ -28,6 +28,7 @@ namespace Fromagerie
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Inscription = new Button();
             label1 = new Label();
             button1 = new Button();
@@ -56,7 +57,7 @@ namespace Fromagerie
             // 
             // Inscription
             // 
-            Inscription.Location = new Point(805, 352);
+            Inscription.Location = new Point(885, 389);
             Inscription.Name = "Inscription";
             Inscription.Size = new Size(101, 41);
             Inscription.TabIndex = 0;
@@ -66,7 +67,7 @@ namespace Fromagerie
             // 
             // label1
             // 
-            label1.Location = new Point(476, 101);
+            label1.Location = new Point(585, 113);
             label1.Name = "label1";
             label1.Size = new Size(126, 20);
             label1.TabIndex = 4;
@@ -115,7 +116,7 @@ namespace Fromagerie
             // 
             // InscripUserTb
             // 
-            InscripUserTb.Location = new Point(780, 223);
+            InscripUserTb.Location = new Point(870, 208);
             InscripUserTb.Margin = new Padding(3, 2, 3, 2);
             InscripUserTb.Name = "InscripUserTb";
             InscripUserTb.Size = new Size(144, 23);
@@ -124,7 +125,7 @@ namespace Fromagerie
             // 
             // InscripMDPUser
             // 
-            InscripMDPUser.Location = new Point(796, 254);
+            InscripMDPUser.Location = new Point(885, 268);
             InscripMDPUser.Margin = new Padding(3, 2, 3, 2);
             InscripMDPUser.Name = "InscripMDPUser";
             InscripMDPUser.Size = new Size(110, 23);
@@ -186,7 +187,7 @@ namespace Fromagerie
             // RoleCB
             // 
             RoleCB.FormattingEnabled = true;
-            RoleCB.Location = new Point(790, 310);
+            RoleCB.Location = new Point(870, 324);
             RoleCB.Margin = new Padding(3, 2, 3, 2);
             RoleCB.Name = "RoleCB";
             RoleCB.Size = new Size(134, 23);
@@ -307,7 +308,9 @@ namespace Fromagerie
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1178, 824);
+            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(1198, 729);
             Controls.Add(TableauLogsB);
             Controls.Add(TableauFromageB);
             Controls.Add(AjoutMouvementB);
@@ -333,6 +336,7 @@ namespace Fromagerie
             Controls.Add(label1);
             Controls.Add(Inscription);
             Name = "Form1";
+            RightToLeftLayout = true;
             Text = "Form1";
             Load += Form1_Load;
             ResumeLayout(false);

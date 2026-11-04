@@ -1,4 +1,4 @@
-﻿using MySql.Data.MySqlClient;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -130,6 +130,11 @@ namespace Fromagerie
                     MessageBox.Show("Erreur : " + ex.Message);
                 }
             }
+        }
+
+        private void AjoutAchat_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
