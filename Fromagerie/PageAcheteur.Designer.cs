@@ -1,4 +1,4 @@
-﻿namespace Fromagerie
+namespace Fromagerie
 {
     partial class PageAcheteur
     {
@@ -31,12 +31,13 @@
             label1 = new Label();
             histoire = new Button();
             deconnexion = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(246, 50);
+            label1.Location = new Point(336, 46);
             label1.Name = "label1";
             label1.Size = new Size(296, 15);
             label1.TabIndex = 0;
@@ -44,7 +45,7 @@
             // 
             // histoire
             // 
-            histoire.Location = new Point(336, 107);
+            histoire.Location = new Point(433, 91);
             histoire.Name = "histoire";
             histoire.Size = new Size(112, 23);
             histoire.TabIndex = 1;
@@ -54,7 +55,7 @@
             // 
             // deconnexion
             // 
-            deconnexion.Location = new Point(336, 261);
+            deconnexion.Location = new Point(433, 593);
             deconnexion.Name = "deconnexion";
             deconnexion.Size = new Size(112, 23);
             deconnexion.TabIndex = 2;
@@ -62,11 +63,22 @@
             deconnexion.UseVisualStyleBackColor = true;
             deconnexion.Click += button1_Click_1;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(207, 156);
+            label2.Name = "label2";
+            label2.Size = new Size(633, 15);
+            label2.TabIndex = 3;
+            label2.Text = "Vous avez le catalogue à dispositions avec le fromage ainsi que son prix au kilo. Vous n'avez juste qu'à faire votre choix !";
+            label2.Click += label2_Click;
+            // 
             // PageAcheteur
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1164, 715);
+            Controls.Add(label2);
             Controls.Add(deconnexion);
             Controls.Add(histoire);
             Controls.Add(label1);
@@ -81,5 +93,6 @@
         private Label label1;
         private Button histoire;
         private Button deconnexion;
+        private Label label2;
     }
 }

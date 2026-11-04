@@ -308,5 +308,12 @@ namespace Fromagerie
         {
 
         }
+
+        private void mdp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        
     }
 }

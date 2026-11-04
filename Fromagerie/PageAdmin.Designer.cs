@@ -33,7 +33,6 @@
             Inscriptionvendeur = new TextBox();
             UnInscripMDPUser = new TextBox();
             RoleCB = new ComboBox();
-            button1 = new Button();
             button2 = new Button();
             SuspendLayout();
             // 
@@ -84,15 +83,6 @@
             RoleCB.TabIndex = 17;
             RoleCB.SelectedIndexChanged += RoleCB_SelectedIndexChanged;
             // 
-            // button1
-            // 
-            button1.Location = new Point(0, 0);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 18;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             button2.Location = new Point(291, 379);
@@ -109,7 +99,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button2);
-            Controls.Add(button1);
             Controls.Add(RoleCB);
             Controls.Add(UnInscripMDPUser);
             Controls.Add(Inscriptionvendeur);
@@ -129,7 +118,6 @@
         private TextBox Inscriptionvendeur;
         private TextBox UnInscripMDPUser;
         private ComboBox RoleCB;
-        private Button button1;
         private Button button2;
     }
 }

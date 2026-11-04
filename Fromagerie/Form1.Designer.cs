@@ -100,6 +100,7 @@
             mdp.Name = "mdp";
             mdp.Size = new Size(110, 23);
             mdp.TabIndex = 7;
+            mdp.TextChanged += mdp_TextChanged;
             // 
             // TestMDP
             // 
