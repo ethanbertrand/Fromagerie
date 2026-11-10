@@ -1,5 +1,6 @@
 using MySql.Data.MySqlClient;
 using System.Data;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 namespace Fromagerie
 {
     public partial class Form1 : Form
@@ -13,7 +14,7 @@ namespace Fromagerie
         private void button1_Click(object sender, EventArgs e)
         {
             string nom = InscripUserTb.Text;
-            string mdp = BCrypt.Net.BCrypt.HashPassword(InscripMDPUser.Text, workFactor: 12);
+            string mdp = BCrypt.Net.BCrypt.HashPassword(mdpinscription.Text, workFactor: 12);
             string role = RoleCB.SelectedValue.ToString();
 
             using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
@@ -306,12 +307,12 @@ namespace Fromagerie
 
         private void InscripMDPUser_TextChanged(object sender, EventArgs e)
         {
-
+            mdpinscription.PasswordChar = '•';
         }
 
         private void mdp_TextChanged(object sender, EventArgs e)
         {
-
+            mdp.PasswordChar = '•';
         }
 
         private void label2_Click(object sender, EventArgs e)

@@ -111,3 +111,4 @@ D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fro
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.Histoire.resources
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageAjoutCommande.resources
 D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.VueCommande.resources
+D:\users\bertrand2\Documents\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.Properties.Resources.resources

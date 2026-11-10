@@ -36,7 +36,7 @@ namespace Fromagerie
             mdp = new TextBox();
             TestMDP = new Button();
             InscripUserTb = new TextBox();
-            InscripMDPUser = new TextBox();
+            mdpinscription = new TextBox();
             envoiepagefromage = new Button();
             AjoutAchatB = new Button();
             label2 = new Label();
@@ -123,14 +123,14 @@ namespace Fromagerie
             InscripUserTb.TabIndex = 9;
             InscripUserTb.TextChanged += InscripUserTb_TextChanged;
             // 
-            // InscripMDPUser
+            // mdpinscription
             // 
-            InscripMDPUser.Location = new Point(885, 268);
-            InscripMDPUser.Margin = new Padding(3, 2, 3, 2);
-            InscripMDPUser.Name = "InscripMDPUser";
-            InscripMDPUser.Size = new Size(110, 23);
-            InscripMDPUser.TabIndex = 10;
-            InscripMDPUser.TextChanged += InscripMDPUser_TextChanged;
+            mdpinscription.Location = new Point(885, 268);
+            mdpinscription.Margin = new Padding(3, 2, 3, 2);
+            mdpinscription.Name = "mdpinscription";
+            mdpinscription.Size = new Size(110, 23);
+            mdpinscription.TabIndex = 10;
+            mdpinscription.TextChanged += InscripMDPUser_TextChanged;
             // 
             // envoiepagefromage
             // 
@@ -327,7 +327,7 @@ namespace Fromagerie
             Controls.Add(label2);
             Controls.Add(AjoutAchatB);
             Controls.Add(envoiepagefromage);
-            Controls.Add(InscripMDPUser);
+            Controls.Add(mdpinscription);
             Controls.Add(InscripUserTb);
             Controls.Add(TestMDP);
             Controls.Add(mdp);
@@ -352,7 +352,7 @@ namespace Fromagerie
         private TextBox mdp;
         private Button TestMDP;
         private TextBox InscripUserTb;
-        private TextBox InscripMDPUser;
+        private TextBox mdpinscription;
         private Button envoiepagefromage;
         private Button AjoutAchatB;
         private Label label2;

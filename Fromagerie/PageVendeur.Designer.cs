@@ -30,7 +30,6 @@ namespace Fromagerie
         {
             label1 = new Label();
             button1 = new Button();
-            ModifierCommande = new Button();
             AjoutCommande = new Button();
             VoirCommande = new Button();
             SuspendLayout();
@@ -54,15 +53,6 @@ namespace Fromagerie
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // ModifierCommande
-            // 
-            ModifierCommande.Location = new Point(423, 153);
-            ModifierCommande.Name = "ModifierCommande";
-            ModifierCommande.Size = new Size(135, 44);
-            ModifierCommande.TabIndex = 2;
-            ModifierCommande.Text = "Modifier Commande";
-            ModifierCommande.UseVisualStyleBackColor = true;
-            // 
             // AjoutCommande
             // 
             AjoutCommande.Location = new Point(210, 153);
@@ -75,7 +65,7 @@ namespace Fromagerie
             // 
             // VoirCommande
             // 
-            VoirCommande.Location = new Point(312, 244);
+            VoirCommande.Location = new Point(406, 153);
             VoirCommande.Name = "VoirCommande";
             VoirCommande.Size = new Size(124, 44);
             VoirCommande.TabIndex = 4;
@@ -90,7 +80,6 @@ namespace Fromagerie
             ClientSize = new Size(800, 450);
             Controls.Add(VoirCommande);
             Controls.Add(AjoutCommande);
-            Controls.Add(ModifierCommande);
             Controls.Add(button1);
             Controls.Add(label1);
             Name = "PageVendeur";
@@ -104,7 +93,6 @@ namespace Fromagerie
 
         private Label label1;
         private Button button1;
-        private Button ModifierCommande;
         private Button AjoutCommande;
         private Button VoirCommande;
     }
