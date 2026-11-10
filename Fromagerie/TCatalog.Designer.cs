@@ -37,6 +37,7 @@
             catalog.Name = "catalog";
             catalog.Size = new Size(776, 426);
             catalog.TabIndex = 0;
+            catalog.Paint += catalog_Paint_1;
             // 
             // TCatalog
             // 

@@ -52,6 +52,9 @@
     <Compile Update="PageDepart.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="PAgeFromage.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TableauFromage.cs">
       <SubType>Form</SubType>
     </Compile>

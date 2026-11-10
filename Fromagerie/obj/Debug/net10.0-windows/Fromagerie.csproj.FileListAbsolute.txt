@@ -111,3 +111,4 @@ D:\users\zhou\Projets\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie
 D:\users\zhou\Projets\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.Inscription.resources
 D:\users\zhou\Projets\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PageDepart.resources
 D:\users\zhou\Projets\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.Connexion.resources
+D:\users\zhou\Projets\Fromagerie\Fromagerie\obj\Debug\net10.0-windows\Fromagerie.PAgeFromage.resources

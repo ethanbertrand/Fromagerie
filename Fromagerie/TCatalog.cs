@@ -18,7 +18,7 @@ namespace Fromagerie
             catalog.AutoSize = true;               // la hauteur s'adapte au contenu
             catalog.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             ChargerTypesFromages();
-            
+            BtnPanier();
         }
 
         private void ChargerTypesFromages()
@@ -33,18 +33,18 @@ namespace Fromagerie
 
             catalog.SuspendLayout();
             catalog.Controls.Clear();
-            
+
 
             foreach (DataRow row in dt.Rows)
             {
                 var btn = new Button
                 {
-                    Text = $"{row["nom"]} - {row["Poids"]} g", 
+                    Text = $"{row["nom"]} - {row["Poids"]} g",
                     AutoSize = true,
                     AutoSizeMode = AutoSizeMode.GrowAndShrink,
                     Padding = new Padding(10, 5, 10, 5),
                     Margin = new Padding(5),
-                    Tag = row["nom"] 
+                    Tag = row["nom"]
                 };
                 btn.Click += BoutonFromage_Click;
                 catalog.Controls.Add(btn);
@@ -53,13 +53,53 @@ namespace Fromagerie
             catalog.ResumeLayout();
         }
 
+   
+
+
         private void BoutonFromage_Click(object sender, EventArgs e)
         {
-            var btn = (Button)sender;
-            string nom = btn.Tag.ToString();
+            /*
+            var btnFromage = (Button)sender;
+            string nomFromage = btnFromage.Tag.ToString();
+            */
+
+            Button btnFromage = (Button)sender;
+            string nomFromage = btnFromage.Tag.ToString();
+
+            // 3. Ouvrir Form2 en lui envoyant ce nom
+            PAgeFromage pageDetails = new PAgeFromage(nomFromage);
+            pageDetails.ShowDialog();
+
+
+
+
         }
 
-       
+        private void BtnPanier_Click(object sender, EventArgs e)
+        {
+            var btn = (Button)sender;
+        }
+
+        private void BtnPanier()
+        {
+            var btn = new Button
+            {
+                Text = "Panier",
+                AutoSize = true,
+                AutoSizeMode = AutoSizeMode.GrowAndShrink,
+                Padding = new Padding(10, 5, 10, 5),
+                Margin = new Padding(5)
+            };
+            btn.Click += BtnPanier_Click;
+            catalog.Controls.Add(btn);
+        }
+
+        /*
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Bouton("Fromagerie.TCatalog");
+        }
+        */
 
         private void TCatalog_Load(object sender, EventArgs e)
         {
@@ -67,6 +107,16 @@ namespace Fromagerie
         }
 
         private void catalog_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void catalog_Paint_1(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }
