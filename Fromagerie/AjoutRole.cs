@@ -24,7 +24,7 @@ namespace Fromagerie
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO Role(libelle) VALUES (@Libelle)";
+                    string query = "INSERT INTO Animal(libelle) VALUES (@Libelle)";
                     using (MySql.Data.MySqlClient.MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Libelle", libelle);
@@ -43,6 +43,16 @@ namespace Fromagerie
                     MessageBox.Show("Erreur : " + ex.Message);
                 }
             }
+        }
+
+        private void libelleRoleTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void AjoutRole_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

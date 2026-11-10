@@ -49,6 +49,7 @@
             libelleRoleTB.Name = "libelleRoleTB";
             libelleRoleTB.Size = new Size(110, 23);
             libelleRoleTB.TabIndex = 1;
+            libelleRoleTB.TextChanged += libelleRoleTB_TextChanged;
             // 
             // EnregistrerB
             // 
@@ -72,6 +73,7 @@
             Margin = new Padding(3, 2, 3, 2);
             Name = "AjoutRole";
             Text = "AjoutRole";
+            Load += AjoutRole_Load;
             ResumeLayout(false);
             PerformLayout();
         }

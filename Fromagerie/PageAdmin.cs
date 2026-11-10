@@ -28,19 +28,17 @@ namespace Fromagerie
             string mdp = BCrypt.Net.BCrypt.HashPassword(UnInscripMDPUser.Text, workFactor: 12);
             string role = RoleCB.SelectedValue.ToString();
 
-
             using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO Utilisateur(nom, mdp, id_1) VALUES (@Nom, @mdp, @Role)";
+                    string query = "INSERT INTO Utilisateur(nom, mdp, id_1) VALUES (@Nom, @mdp, @role)";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Nom", nom);
                         cmd.Parameters.AddWithValue("@mdp", mdp);
-                        cmd.Parameters.AddWithValue("@Role", role);
-
+                        cmd.Parameters.AddWithValue("@role", role);
 
                         int lignesAffectees = cmd.ExecuteNonQuery();
 
@@ -86,7 +84,19 @@ namespace Fromagerie
             this.Hide();
         }
 
-        
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            AjoutAnimal page = new AjoutAnimal();
+            page.Show();
+            this.Hide();
+        }
+
+        private void afficherlogs_Click(object sender, EventArgs e)
+        {
+            logs page = new logs();
+            page.Show();
+            this.Hide();
+        }
     }
 
 

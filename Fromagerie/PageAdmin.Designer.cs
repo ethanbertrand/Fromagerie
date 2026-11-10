@@ -35,6 +35,8 @@ namespace Fromagerie
             RoleCB = new ComboBox();
             button2 = new Button();
             pagevendeur = new Button();
+            unajoutanimal = new Button();
+            afficherlogs = new Button();
             SuspendLayout();
             // 
             // label1
@@ -96,7 +98,7 @@ namespace Fromagerie
             // 
             // pagevendeur
             // 
-            pagevendeur.Location = new Point(506, 171);
+            pagevendeur.Location = new Point(506, 137);
             pagevendeur.Name = "pagevendeur";
             pagevendeur.Size = new Size(128, 52);
             pagevendeur.TabIndex = 20;
@@ -104,11 +106,33 @@ namespace Fromagerie
             pagevendeur.UseVisualStyleBackColor = true;
             pagevendeur.Click += pagevendeur_Click;
             // 
+            // unajoutanimal
+            // 
+            unajoutanimal.Location = new Point(506, 208);
+            unajoutanimal.Name = "unajoutanimal";
+            unajoutanimal.Size = new Size(128, 52);
+            unajoutanimal.TabIndex = 21;
+            unajoutanimal.Text = "Ajouter Animal";
+            unajoutanimal.UseVisualStyleBackColor = true;
+            unajoutanimal.Click += button1_Click_1;
+            // 
+            // afficherlogs
+            // 
+            afficherlogs.Location = new Point(506, 279);
+            afficherlogs.Name = "afficherlogs";
+            afficherlogs.Size = new Size(128, 52);
+            afficherlogs.TabIndex = 22;
+            afficherlogs.Text = "Afficher logs";
+            afficherlogs.UseVisualStyleBackColor = true;
+            afficherlogs.Click += afficherlogs_Click;
+            // 
             // PageAdmin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(afficherlogs);
+            Controls.Add(unajoutanimal);
             Controls.Add(pagevendeur);
             Controls.Add(button2);
             Controls.Add(RoleCB);
@@ -132,5 +156,7 @@ namespace Fromagerie
         private ComboBox RoleCB;
         private Button button2;
         private Button pagevendeur;
+        private Button unajoutanimal;
+        private Button afficherlogs;
     }
 }

@@ -28,7 +28,7 @@ namespace Fromagerie
                 {
                     conn.Open();
 
-                    string query = "select Utilisateur.nom as Client, Achat.Quantite,Commande.prix_total, Fromage.nom as Fromage,Producteur.Nom As Producteur\nFROM Utilisateur\nINNER JOIN Commande\nON Utilisateur.id = Commande.id_2\nINNER JOIN Achat \nON Commande.id = Achat.id\nINNER JOIN Fromage\nON Achat.id_1= Fromage.id\nINNER JOIN Producteur\nON Fromage.id_2 = Producteur.id;";
+                    string query = " SELECT Commande.id,Commande.prix_total\r\nFrom Commande \r\nInner Join Statut \r\n On Statut.id= Commande.id_statut\r\n WHERE Statut.id = 2 ;";
 
                     MySqlDataAdapter adapter =
                         new MySqlDataAdapter(query, conn);

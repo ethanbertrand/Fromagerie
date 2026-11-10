@@ -55,21 +55,21 @@ namespace Fromagerie
             // 
             // AjoutCommande
             // 
-            AjoutCommande.Location = new Point(210, 153);
+            AjoutCommande.Location = new Point(399, 172);
             AjoutCommande.Name = "AjoutCommande";
-            AjoutCommande.Size = new Size(124, 44);
+            AjoutCommande.Size = new Size(166, 44);
             AjoutCommande.TabIndex = 3;
-            AjoutCommande.Text = "Ajout Commande";
+            AjoutCommande.Text = "Commandes non préparées";
             AjoutCommande.UseVisualStyleBackColor = true;
             AjoutCommande.Click += AjoutCommande_Click;
             // 
             // VoirCommande
             // 
-            VoirCommande.Location = new Point(406, 153);
+            VoirCommande.Location = new Point(194, 172);
             VoirCommande.Name = "VoirCommande";
-            VoirCommande.Size = new Size(124, 44);
+            VoirCommande.Size = new Size(166, 44);
             VoirCommande.TabIndex = 4;
-            VoirCommande.Text = "Voir les commandes";
+            VoirCommande.Text = "Commandes préparées";
             VoirCommande.UseVisualStyleBackColor = true;
             VoirCommande.Click += VoirCommande_Click;
             // 

@@ -47,7 +47,7 @@ namespace Fromagerie
                             if (quantiteDouble > poidsFromage)
                             {
                                 MessageBox.Show("La quantité saisie dépasse le poids du fromage sélectionné.");
-                                return; 
+                                return;
                             }
                         }
                     }
@@ -208,6 +208,16 @@ namespace Fromagerie
                     MessageBox.Show("Erreur : " + ex.Message);
                 }
             }
+        }
+
+        private void AjoutMouvement_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CommandeCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

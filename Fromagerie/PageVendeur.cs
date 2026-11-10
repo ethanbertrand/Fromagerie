@@ -31,7 +31,7 @@ namespace Fromagerie
 
         private void AjoutCommande_Click(object sender, EventArgs e)
         {
-            AjoutCommande page = new AjoutCommande();
+            FinaliserCommandes page = new FinaliserCommandes();
             page.Show();
             this.Hide();
         }
