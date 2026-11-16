@@ -82,5 +82,10 @@ namespace Fromagerie
                 }
             }
         }
+
+        private void CapaciteMaxTB_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

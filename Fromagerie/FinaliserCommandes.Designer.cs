@@ -35,7 +35,7 @@
             RoleVendeur = new ComboBox();
             NumeroCommande = new ComboBox();
             button1 = new Button();
-            button2 = new Button();
+            pagevendeur = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -104,22 +104,22 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // button2
+            // pagevendeur
             // 
-            button2.Location = new Point(574, 738);
-            button2.Name = "button2";
-            button2.Size = new Size(188, 62);
-            button2.TabIndex = 7;
-            button2.Text = "Revenir sur le menu vendeur";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
+            pagevendeur.Location = new Point(574, 738);
+            pagevendeur.Name = "pagevendeur";
+            pagevendeur.Size = new Size(188, 62);
+            pagevendeur.TabIndex = 7;
+            pagevendeur.Text = "Revenir sur le menu vendeur";
+            pagevendeur.UseVisualStyleBackColor = true;
+            pagevendeur.Click += button2_Click;
             // 
             // FinaliserCommandes
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1498, 916);
-            Controls.Add(button2);
+            Controls.Add(pagevendeur);
             Controls.Add(button1);
             Controls.Add(NumeroCommande);
             Controls.Add(RoleVendeur);
@@ -144,6 +144,6 @@
         private ComboBox RoleVendeur;
         private ComboBox NumeroCommande;
         private Button button1;
-        private Button button2;
+        private Button pagevendeur;
     }
 }

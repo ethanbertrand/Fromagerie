@@ -42,7 +42,6 @@ namespace Fromagerie
             label2 = new Label();
             AjoutCommandeB = new Button();
             AjoutRoleB = new Button();
-            RoleCB = new ComboBox();
             AjoutTypeFromageB = new Button();
             AjoutProducteur = new Button();
             button2 = new Button();
@@ -184,16 +183,6 @@ namespace Fromagerie
             AjoutRoleB.UseVisualStyleBackColor = true;
             AjoutRoleB.Click += AjoutRoleB_Click;
             // 
-            // RoleCB
-            // 
-            RoleCB.FormattingEnabled = true;
-            RoleCB.Location = new Point(870, 324);
-            RoleCB.Margin = new Padding(3, 2, 3, 2);
-            RoleCB.Name = "RoleCB";
-            RoleCB.Size = new Size(134, 23);
-            RoleCB.TabIndex = 16;
-            RoleCB.SelectedIndexChanged += RoleCB_SelectedIndexChanged;
-            // 
             // AjoutTypeFromageB
             // 
             AjoutTypeFromageB.Location = new Point(847, 590);
@@ -310,7 +299,7 @@ namespace Fromagerie
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
-            ClientSize = new Size(1198, 729);
+            ClientSize = new Size(1198, 774);
             Controls.Add(TableauLogsB);
             Controls.Add(TableauFromageB);
             Controls.Add(AjoutMouvementB);
@@ -321,7 +310,6 @@ namespace Fromagerie
             Controls.Add(button2);
             Controls.Add(AjoutProducteur);
             Controls.Add(AjoutTypeFromageB);
-            Controls.Add(RoleCB);
             Controls.Add(AjoutRoleB);
             Controls.Add(AjoutCommandeB);
             Controls.Add(label2);
@@ -358,7 +346,6 @@ namespace Fromagerie
         private Label label2;
         private Button AjoutCommandeB;
         private Button AjoutRoleB;
-        private ComboBox RoleCB;
         private Button AjoutTypeFromageB;
         private Button AjoutProducteur;
         private Button button2;

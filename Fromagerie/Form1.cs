@@ -8,26 +8,26 @@ namespace Fromagerie
         public Form1()
         {
             InitializeComponent();
-            RemplirCBRole();
+           
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string nom = InscripUserTb.Text;
             string mdp = BCrypt.Net.BCrypt.HashPassword(mdpinscription.Text, workFactor: 12);
-            string role = RoleCB.SelectedValue.ToString();
+            
 
             using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO Utilisateur(nom, mdp, id_1) VALUES (@Nom, @mdp, @role)";
+                    string query = "INSERT INTO Utilisateur(nom, mdp, id_1) VALUES (@Nom, @mdp, 1)";
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Nom", nom);
                         cmd.Parameters.AddWithValue("@mdp", mdp);
-                        cmd.Parameters.AddWithValue("@role", role);
+                        
 
                         int lignesAffectees = cmd.ExecuteNonQuery();
 
@@ -201,36 +201,8 @@ namespace Fromagerie
             Bouton("Fromagerie.AjoutRole");
         }
 
-        private void RoleCB_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-        private void RemplirCBRole()
-        {
-            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
-            {
-                try
-                {
-                    conn.Open();
-
-                    string query = "SELECT id, libelle FROM Role";
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
-                    using (MySqlDataAdapter adapter = new MySqlDataAdapter(cmd))
-                    {
-                        DataTable dt = new DataTable();
-                        adapter.Fill(dt);
-
-                        RoleCB.DataSource = dt;
-                        RoleCB.DisplayMember = "libelle";  // ce qui s'affiche à l'utilisateur
-                        RoleCB.ValueMember = "id";     // la valeur réelle utilisée en interne
-                    }
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Erreur : " + ex.Message);
-                }
-            }
-        }
+        
+        
 
         private void AjoutTypeFromageB_Click(object sender, EventArgs e)
         {
