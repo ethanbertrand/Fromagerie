@@ -26,6 +26,7 @@ namespace Fromagerie
         }
 
         // Chargement des commandes depuis MySQL
+        
         private void ChargerDonnees()
         {
             try
@@ -36,47 +37,118 @@ namespace Fromagerie
                     conn.Open();
 
                     string query = @"
-                        SELECT Commande.id,Commande.prix_total
-                        From Commande 
-                        Inner Join Statut 
-                        On Statut.id= Commande.id_statut
-                        WHERE Statut.id = 1";
+                        SELECT
+                            Commande.id AS IdCommande,
+                            Commande.prix_total AS PrixTotal,
+                            Fromage.nom AS NomFromage,
+                            Achat.Quantite AS Quantite,
+                            Client.nom AS Client,
+                            Animal.libelle AS Animal
 
-                    MySqlDataAdapter adapter =
-                        new MySqlDataAdapter(query, conn);
+                        FROM Commande
 
-                    DataTable dt = new DataTable();
+                        INNER JOIN Statut
+                            ON Statut.id = Commande.id_statut
 
-                    adapter.Fill(dt);
+                        LEFT JOIN Achat
+                            ON Achat.id = Commande.id
 
-                    dataGridView1.DataSource = dt;
+                        LEFT JOIN Fromage
+                            ON Fromage.id = Achat.id_1
 
-                    // Configuration du tableau
-                    dataGridView1.Visible = true;
+                        LEFT JOIN Utilisateur AS Client
+                            ON Client.id = Commande.id_2
 
-                    dataGridView1.AutoSizeColumnsMode =
-                        DataGridViewAutoSizeColumnsMode.Fill;
+                        LEFT JOIN TypeFromage
+                            ON Fromage.id_2 = TypeFromage.id
 
-                    dataGridView1.ReadOnly = true;
+                        LEFT JOIN Animal_type
+                            ON Animal_type.id_type_fromage = TypeFromage.id
 
-                    dataGridView1.AllowUserToAddRows = false;
+                        LEFT JOIN Animal
+                            ON Animal.id = Animal_type.id_animal
 
-                    dataGridView1.AllowUserToDeleteRows = false;
+                        WHERE Statut.id = 1
 
-                    dataGridView1.SelectionMode =
-                        DataGridViewSelectionMode.FullRowSelect;
+                        ORDER BY Commande.id;";
 
-                    dataGridView1.MultiSelect = false;
-
-                    dataGridView1.RowHeadersVisible = false;
-
-                    if (dt.Rows.Count == 0)
+                    using (MySqlCommand cmd =
+                        new MySqlCommand(query, conn))
                     {
-                        MessageBox.Show(
-                            "Aucune commande trouvée.",
-                            "Information",
-                            MessageBoxButtons.OK,
-                            MessageBoxIcon.Information);
+                        using (MySqlDataReader reader =
+                            cmd.ExecuteReader())
+                        {
+                            dataGridView1.Rows.Clear();
+                            dataGridView1.Columns.Clear();
+
+                            dataGridView1.Columns.Add("IdCommande", "ID commande");
+                            dataGridView1.Columns.Add("PrixTotal", "Prix total");
+                            dataGridView1.Columns.Add("Fromage", "Fromage");
+                            dataGridView1.Columns.Add("Quantite", "Quantité");
+                            dataGridView1.Columns.Add("Type de lait", "Type de lait");
+                            dataGridView1.Columns.Add("Client", "Client");
+
+                            dataGridView1.AutoSizeColumnsMode =
+                                DataGridViewAutoSizeColumnsMode.Fill;
+
+                            dataGridView1.ReadOnly = true;
+                            dataGridView1.AllowUserToAddRows = false;
+
+                            dataGridView1.SelectionMode =
+                                DataGridViewSelectionMode.FullRowSelect;
+
+                            int derniereCommande = -1;
+
+                            while (reader.Read())
+                            {
+                                int idCommande =
+                                    Convert.ToInt32(reader["IdCommande"]);
+
+                                if (idCommande != derniereCommande)
+                                {
+                                    decimal prix =
+                                        Convert.ToDecimal(reader["PrixTotal"]);
+
+                                    int index = dataGridView1.Rows.Add(
+                                        idCommande,
+                                        prix.ToString("0.00") + " €",
+                                        "",
+                                        "",
+                                        "",
+                                        reader["Client"].ToString()
+                                    );
+
+                                    dataGridView1.Rows[index]
+                                        .DefaultCellStyle.Font =
+                                        new Font(dataGridView1.Font, FontStyle.Bold);
+
+                                    dataGridView1.Rows[index]
+                                        .DefaultCellStyle.BackColor =
+                                        Color.LightBlue;
+
+                                    derniereCommande = idCommande;
+                                }
+
+                                if (reader["NomFromage"] != DBNull.Value)
+                                {
+                                    int index = dataGridView1.Rows.Add(
+                                        "",
+                                        "",
+                                        reader["NomFromage"].ToString(),
+                                        reader["Quantite"].ToString(),
+                                        reader["Animal"] == DBNull.Value ?
+                                        ""
+                                            : reader["Animal"].ToString(),
+                                        "",
+                                        ""
+                                    );
+
+                                    dataGridView1.Rows[index]
+                                        .DefaultCellStyle.BackColor =
+                                        Color.LightYellow;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -172,20 +244,24 @@ namespace Fromagerie
 
         }
 
+        
         private void button1_Click(object sender, EventArgs e)
         {
             int idCommande = Convert.ToInt32(NumeroCommande.SelectedValue);
+            int idVendeur = Convert.ToInt32(RoleVendeur.SelectedValue);
 
             using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "Update Commande SET id_statut=2 WHERE id = @idCommande";
+
+                    string query = "UPDATE Commande SET id_statut=2, id_1=@idVendeur WHERE id=@idCommande";
+
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@idCommande", idCommande);
-
+                        cmd.Parameters.AddWithValue("@idVendeur", idVendeur);
 
                         int lignesAffectees = cmd.ExecuteNonQuery();
 
@@ -193,6 +269,7 @@ namespace Fromagerie
                         {
                             MessageBox.Show("Commande finalisée avec succès !");
                             ChargerDonnees();
+                            RemplirCBid();
                         }
                     }
                 }

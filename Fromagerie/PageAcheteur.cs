@@ -1,3 +1,4 @@
+using MySqlX.XDevAPI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -35,6 +36,11 @@ namespace Fromagerie
         }
 
         private void PageAjoutCommande_Load(object sender, EventArgs e)
+        {
+            labelBienvenue.Text = "Bienvenue sur le site Internet d'Eure-et-Loir Fromage " + Session.NomUtilisateur + " !!!";
+        }
+
+        private void labelBienvenue_Click(object sender, EventArgs e)
         {
 
         }

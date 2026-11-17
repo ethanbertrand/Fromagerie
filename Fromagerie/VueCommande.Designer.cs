@@ -35,17 +35,15 @@ namespace Fromagerie
             // 
             // dataGridView1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Dock = DockStyle.Fill;
-            dataGridView1.Location = new Point(0, 0);
+            dataGridView1.Location = new Point(98, 23);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(800, 450);
-            dataGridView1.TabIndex = 0;
+            dataGridView1.Size = new Size(961, 471);
+            dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // button1
             // 
-            button1.Location = new Point(306, 361);
+            button1.Location = new Point(512, 530);
             button1.Name = "button1";
             button1.Size = new Size(169, 31);
             button1.TabIndex = 1;
@@ -57,7 +55,7 @@ namespace Fromagerie
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1329, 692);
             Controls.Add(button1);
             Controls.Add(dataGridView1);
             Name = "VueCommande";

@@ -31,7 +31,6 @@ namespace Fromagerie
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             Inscription = new Button();
             label1 = new Label();
-            button1 = new Button();
             NomTB = new TextBox();
             mdp = new TextBox();
             TestMDP = new Button();
@@ -51,12 +50,12 @@ namespace Fromagerie
             AjoutEmplacementB = new Button();
             AjoutMouvementB = new Button();
             TableauFromageB = new Button();
-            TableauLogsB = new Button();
+            logo = new Label();
             SuspendLayout();
             // 
             // Inscription
             // 
-            Inscription.Location = new Point(885, 389);
+            Inscription.Location = new Point(885, 362);
             Inscription.Name = "Inscription";
             Inscription.Size = new Size(101, 41);
             Inscription.TabIndex = 0;
@@ -66,39 +65,26 @@ namespace Fromagerie
             // 
             // label1
             // 
-            label1.Location = new Point(585, 113);
+            label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(126, 20);
-            label1.TabIndex = 4;
-            label1.Text = "Eure-Et-Loir Fromage";
-            label1.Click += label1_Click;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(110, 68);
-            button1.Margin = new Padding(3, 2, 3, 2);
-            button1.Name = "button1";
-            button1.Size = new Size(82, 22);
-            button1.TabIndex = 5;
-            button1.Text = "test";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click_1;
+            label1.Size = new Size(100, 23);
+            label1.TabIndex = 27;
             // 
             // NomTB
             // 
-            NomTB.Location = new Point(223, 223);
+            NomTB.Location = new Point(203, 211);
             NomTB.Margin = new Padding(3, 2, 3, 2);
             NomTB.Name = "NomTB";
-            NomTB.Size = new Size(110, 23);
+            NomTB.Size = new Size(144, 23);
             NomTB.TabIndex = 6;
             NomTB.TextChanged += Nom_TextChanged;
             // 
             // mdp
             // 
-            mdp.Location = new Point(223, 268);
+            mdp.Location = new Point(203, 267);
             mdp.Margin = new Padding(3, 2, 3, 2);
             mdp.Name = "mdp";
-            mdp.Size = new Size(110, 23);
+            mdp.Size = new Size(144, 23);
             mdp.TabIndex = 7;
             mdp.TextChanged += mdp_TextChanged;
             // 
@@ -115,7 +101,7 @@ namespace Fromagerie
             // 
             // InscripUserTb
             // 
-            InscripUserTb.Location = new Point(870, 208);
+            InscripUserTb.Location = new Point(870, 223);
             InscripUserTb.Margin = new Padding(3, 2, 3, 2);
             InscripUserTb.Name = "InscripUserTb";
             InscripUserTb.Size = new Size(144, 23);
@@ -124,10 +110,10 @@ namespace Fromagerie
             // 
             // mdpinscription
             // 
-            mdpinscription.Location = new Point(885, 268);
+            mdpinscription.Location = new Point(870, 279);
             mdpinscription.Margin = new Padding(3, 2, 3, 2);
             mdpinscription.Name = "mdpinscription";
-            mdpinscription.Size = new Size(110, 23);
+            mdpinscription.Size = new Size(144, 23);
             mdpinscription.TabIndex = 10;
             mdpinscription.TextChanged += InscripMDPUser_TextChanged;
             // 
@@ -282,16 +268,14 @@ namespace Fromagerie
             TableauFromageB.UseVisualStyleBackColor = true;
             TableauFromageB.Click += TableauFromageB_Click;
             // 
-            // TableauLogsB
+            // logo
             // 
-            TableauLogsB.Location = new Point(676, 724);
-            TableauLogsB.Margin = new Padding(3, 2, 3, 2);
-            TableauLogsB.Name = "TableauLogsB";
-            TableauLogsB.Size = new Size(125, 28);
-            TableauLogsB.TabIndex = 26;
-            TableauLogsB.Text = "TableauLogs";
-            TableauLogsB.UseVisualStyleBackColor = true;
-            TableauLogsB.Click += TableauLogsB_Click;
+            logo.AutoSize = true;
+            logo.Location = new Point(531, 123);
+            logo.Name = "logo";
+            logo.Size = new Size(118, 15);
+            logo.TabIndex = 28;
+            logo.Text = "Eure-et-Loir fromage";
             // 
             // Form1
             // 
@@ -300,7 +284,7 @@ namespace Fromagerie
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Center;
             ClientSize = new Size(1198, 774);
-            Controls.Add(TableauLogsB);
+            Controls.Add(logo);
             Controls.Add(TableauFromageB);
             Controls.Add(AjoutMouvementB);
             Controls.Add(AjoutEmplacementB);
@@ -320,7 +304,6 @@ namespace Fromagerie
             Controls.Add(TestMDP);
             Controls.Add(mdp);
             Controls.Add(NomTB);
-            Controls.Add(button1);
             Controls.Add(label1);
             Controls.Add(Inscription);
             Name = "Form1";
@@ -335,7 +318,6 @@ namespace Fromagerie
 
         private Button Inscription;
         private Label label1;
-        private Button button1;
         private TextBox NomTB;
         private TextBox mdp;
         private Button TestMDP;
@@ -355,6 +337,6 @@ namespace Fromagerie
         private Button AjoutEmplacementB;
         private Button AjoutMouvementB;
         private Button TableauFromageB;
-        private Button TableauLogsB;
+        private Label logo;
     }
 }

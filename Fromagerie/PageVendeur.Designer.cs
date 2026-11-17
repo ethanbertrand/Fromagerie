@@ -28,20 +28,21 @@ namespace Fromagerie
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
+            labelVendeur = new Label();
             button1 = new Button();
             AjoutCommande = new Button();
             VoirCommande = new Button();
+            labelv = new Label();
             SuspendLayout();
             // 
-            // label1
+            // labelVendeur
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(299, 95);
-            label1.Name = "label1";
-            label1.Size = new Size(174, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Bienvenue sur la page vendeur!!";
+            labelVendeur.AutoSize = true;
+            labelVendeur.Location = new Point(299, 95);
+            labelVendeur.Name = "labelVendeur";
+            labelVendeur.Size = new Size(0, 15);
+            labelVendeur.TabIndex = 0;
+            labelVendeur.Click += label1_Click;
             // 
             // button1
             // 
@@ -73,15 +74,26 @@ namespace Fromagerie
             VoirCommande.UseVisualStyleBackColor = true;
             VoirCommande.Click += VoirCommande_Click;
             // 
+            // labelv
+            // 
+            labelv.AutoSize = true;
+            labelv.Location = new Point(328, 73);
+            labelv.Name = "labelv";
+            labelv.RightToLeft = RightToLeft.Yes;
+            labelv.Size = new Size(79, 15);
+            labelv.TabIndex = 5;
+            labelv.Text = "Page Vendeur";
+            // 
             // PageVendeur
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(labelv);
             Controls.Add(VoirCommande);
             Controls.Add(AjoutCommande);
             Controls.Add(button1);
-            Controls.Add(label1);
+            Controls.Add(labelVendeur);
             Name = "PageVendeur";
             Text = "PageVendeur";
             Load += PageVendeur_Load;
@@ -91,9 +103,10 @@ namespace Fromagerie
 
         #endregion
 
-        private Label label1;
+        private Label labelVendeur;
         private Button button1;
         private Button AjoutCommande;
         private Button VoirCommande;
+        private Label labelv;
     }
 }

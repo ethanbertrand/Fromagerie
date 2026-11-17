@@ -35,11 +35,13 @@ namespace Fromagerie
                     string query = @"
                         SELECT
                             Log_utilisateur.Date_  AS Date_de_Connexion,
-                            Utilisateur.nom AS Utilisateur
+                            Utilisateur.nom AS Utilisateur,
+                            Role.libelle As Role
                         FROM Log_utilisateur
                         INNER JOIN Utilisateur
-                        ON Utilisateur.id =
-                           Log_utilisateur.id_utilisateur
+                        ON Utilisateur.id = Log_utilisateur.id_utilisateur
+                        INNER JOIN Role
+                        ON Role.id = Utilisateur.id_1
                         ORDER BY Log_utilisateur.Date_ DESC";
 
                     MySqlDataAdapter adapter =

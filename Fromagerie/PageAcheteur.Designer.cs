@@ -28,20 +28,11 @@ namespace Fromagerie
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             histoire = new Button();
             deconnexion = new Button();
             label2 = new Label();
+            labelBienvenue = new Label();
             SuspendLayout();
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(336, 46);
-            label1.Name = "label1";
-            label1.Size = new Size(296, 15);
-            label1.TabIndex = 0;
-            label1.Text = "Bienvenue sur le site Internet d'Eure-et-Loir Fromage !!!";
             // 
             // histoire
             // 
@@ -73,15 +64,25 @@ namespace Fromagerie
             label2.Text = "Vous avez le catalogue à dispositions avec le fromage ainsi que son prix au kilo. Vous n'avez juste qu'à faire votre choix !";
             label2.Click += label2_Click;
             // 
+            // labelBienvenue
+            // 
+            labelBienvenue.AutoSize = true;
+            labelBienvenue.Location = new Point(417, 50);
+            labelBienvenue.Name = "labelBienvenue";
+            labelBienvenue.Size = new Size(38, 15);
+            labelBienvenue.TabIndex = 4;
+            labelBienvenue.Text = "label3";
+            labelBienvenue.Click += labelBienvenue_Click;
+            // 
             // PageAjoutCommande
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1164, 715);
+            Controls.Add(labelBienvenue);
             Controls.Add(label2);
             Controls.Add(deconnexion);
             Controls.Add(histoire);
-            Controls.Add(label1);
             Name = "PageAjoutCommande";
             Text = "PageAcheteur";
             Load += PageAjoutCommande_Load;
@@ -90,10 +91,9 @@ namespace Fromagerie
         }
 
         #endregion
-
-        private Label label1;
         private Button histoire;
         private Button deconnexion;
         private Label label2;
+        private Label labelBienvenue;
     }
 }

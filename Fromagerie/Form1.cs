@@ -13,51 +13,75 @@ namespace Fromagerie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string nom = InscripUserTb.Text;
-            string mdp = BCrypt.Net.BCrypt.HashPassword(mdpinscription.Text, workFactor: 12);
-            
+            string nom = InscripUserTb.Text.Trim();
+            string motDePasse = mdpinscription.Text;
 
-            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
+            if (string.IsNullOrWhiteSpace(nom) ||
+                string.IsNullOrWhiteSpace(motDePasse))
+            {
+                MessageBox.Show("Veuillez remplir tous les champs !");
+                return;
+            }
+
+            string mdp = BCrypt.Net.BCrypt.HashPassword(
+                motDePasse, workFactor: 12);
+
+            using (MySqlConnection conn =
+                   new MySqlConnection(Global.ConnectionString))
             {
                 try
                 {
                     conn.Open();
-                    string query = "INSERT INTO Utilisateur(nom, mdp, id_1) VALUES (@Nom, @mdp, 1)";
-                    using (MySqlCommand cmd = new MySqlCommand(query, conn))
+
+                    using (MySqlCommand cmdVerif =
+                           new MySqlCommand("VerifierUtilisateur", conn))
+                    {
+                        cmdVerif.CommandType = CommandType.StoredProcedure;
+
+                        cmdVerif.Parameters.AddWithValue("@p_nom", nom);
+
+                        cmdVerif.ExecuteNonQuery();
+                    }
+
+                    
+                    string query = @"
+                INSERT INTO Utilisateur(nom, mdp, id_1)
+                VALUES (@Nom, @mdp, 1)";
+
+                    using (MySqlCommand cmd =
+                           new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@Nom", nom);
                         cmd.Parameters.AddWithValue("@mdp", mdp);
-                        
 
                         int lignesAffectees = cmd.ExecuteNonQuery();
 
                         if (lignesAffectees > 0)
                         {
-                            MessageBox.Show("Enregistrement ajouté avec succès !");
+                            MessageBox.Show(
+                                "Enregistrement ajouté avec succès !");
+
+                            InscripUserTb.Clear();
+                            mdpinscription.Clear();
                         }
                     }
                 }
-                catch (Exception ex)
+                catch (MySqlException ex)
                 {
-                    MessageBox.Show("Erreur : " + ex.Message);
-                }
-            }
-        }
-
-
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-            using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
-            {
-                try
-                {
-                    conn.Open();
-                    MessageBox.Show("Connexion réussie !");
+                    if (ex.SqlState == "45000")
+                    {
+                        MessageBox.Show(
+                            "Ce nom d'utilisateur existe déjà !");
+                    }
+                    else if (ex.Number == 1062)
+                    {
+                        MessageBox.Show(
+                            "Ce nom d'utilisateur existe déjà !");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Erreur SQL : " + ex.Message);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -116,7 +140,6 @@ namespace Fromagerie
                                     "Nom d'utilisateur ou mot de passe incorrect.");
                                 return;
                             }
-
                             idUtilisateur = reader.GetInt32("id");
                             hashStocke = reader.GetString("mdp");
                             role = reader["libelle"].ToString();
@@ -130,12 +153,14 @@ namespace Fromagerie
                             "Nom d'utilisateur ou mot de passe incorrect.");
                         return;
                     }
-
+                    Session.IdUtilisateur = idUtilisateur;
+                    Session.NomUtilisateur = saisieUtilisateur;
+                    Session.Role = role;
                     string queryLog = @"
-                INSERT INTO Log_utilisateur
-                    (Date_, id_utilisateur)
-                VALUES
-                    (@DateConnexion, @IdUtilisateur)";
+                        INSERT INTO Log_utilisateur
+                            (Date_, id_utilisateur)
+                        VALUES
+                            (@DateConnexion, @IdUtilisateur)";
 
                     using (MySqlCommand cmdLog =
                            new MySqlCommand(queryLog, conn))
@@ -267,10 +292,6 @@ namespace Fromagerie
             Bouton("Fromagerie.TableauFromage");
         }
 
-        private void TableauLogsB_Click(object sender, EventArgs e)
-        {
-            Bouton("Fromagerie.TableauLog");
-        }
 
         private void InscripUserTb_TextChanged(object sender, EventArgs e)
         {
