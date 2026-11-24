@@ -51,6 +51,7 @@
             InscripUserTb.Name = "InscripUserTb";
             InscripUserTb.Size = new Size(189, 23);
             InscripUserTb.TabIndex = 1;
+            InscripUserTb.TextChanged += InscripUserTb_TextChanged;
             // 
             // label2
             // 

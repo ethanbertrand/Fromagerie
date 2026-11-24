@@ -26,7 +26,7 @@ namespace Fromagerie
             DataTable dt = new DataTable();
 
             using (var connection = new MySqlConnection(Global.ConnectionString))
-            using (var adapter = new MySqlDataAdapter("SELECT nom, Poids FROM Fromage", connection))
+            using (var adapter = new MySqlDataAdapter("SELECT nom, Poids, prix_kg FROM Fromage ", connection))
             {
                 adapter.Fill(dt); // ouvre et ferme la connexion automatiquement
             }
@@ -39,7 +39,7 @@ namespace Fromagerie
             {
                 var btn = new Button
                 {
-                    Text = $"{row["nom"]} - {row["Poids"]} g",
+                    Text = $"{row["nom"]} - {row["Poids"]} kg \n {row["prix_kg"]} €/kg",
                     AutoSize = true,
                     AutoSizeMode = AutoSizeMode.GrowAndShrink,
                     Padding = new Padding(10, 5, 10, 5),
@@ -84,7 +84,7 @@ namespace Fromagerie
         {
             var btn = new Button
             {
-                Text = "Panier",
+                Text = "Panier 🛒",
                 AutoSize = true,
                 AutoSizeMode = AutoSizeMode.GrowAndShrink,
                 Padding = new Padding(10, 5, 10, 5),

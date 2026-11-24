@@ -102,6 +102,7 @@
             mdp.Name = "mdp";
             mdp.Size = new Size(110, 23);
             mdp.TabIndex = 7;
+            mdp.TextChanged += mdp_TextChanged;
             // 
             // TestMDP
             // 
@@ -315,9 +316,9 @@
             // 
             // button3
             // 
-            button3.Location = new Point(871, 776);
+            button3.Location = new Point(847, 776);
             button3.Name = "button3";
-            button3.Size = new Size(75, 23);
+            button3.Size = new Size(113, 23);
             button3.TabIndex = 28;
             button3.Text = "testpageDepage";
             button3.UseVisualStyleBackColor = true;

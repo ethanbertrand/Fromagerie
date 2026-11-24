@@ -274,5 +274,10 @@ namespace Fromagerie
         {
             Bouton("Fromagerie.PageDepart");
         }
+
+        private void mdp_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

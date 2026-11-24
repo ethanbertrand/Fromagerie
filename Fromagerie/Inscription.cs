@@ -35,7 +35,7 @@ namespace Fromagerie
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void signUpLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -43,5 +43,9 @@ namespace Fromagerie
             Bouton("Fromagerie.Connexion");
         }
 
+        private void InscripUserTb_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
