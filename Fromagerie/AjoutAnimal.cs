@@ -53,7 +53,52 @@ namespace Fromagerie
 
         private void retouradmin_Click(object sender, EventArgs e)
         {
+            Form1 page = new Form1();
+            page.Show();
+            this.Hide();
+        }
+
+        private void AjoutAnimal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void actifAnimalBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void navInscription_Click(object sender, EventArgs e)
+        {
             PageAdmin page = new PageAdmin();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navVendeur_Click(object sender, EventArgs e)
+        {
+            PageVendeur page = new PageVendeur();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navLogs_Click(object sender, EventArgs e)
+        {
+            logs page = new logs();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navLivraison_Click(object sender, EventArgs e)
+        {
+            Livraison_commande page = new Livraison_commande();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navLivrees_Click(object sender, EventArgs e)
+        {
+            commandeslivrees page = new commandeslivrees();
             page.Show();
             this.Hide();
         }

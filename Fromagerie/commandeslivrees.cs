@@ -196,5 +196,10 @@ namespace Fromagerie
             page.Show();
             this.Hide();
         }
+
+        private void commandeslivrees_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

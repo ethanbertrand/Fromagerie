@@ -11,7 +11,7 @@ namespace Fromagerie
         {
             InitializeComponent();
             RemplirCBid();
-            
+
 
             this.Load += Livraison_commande_Load;
         }
@@ -150,12 +150,12 @@ namespace Fromagerie
 
         }
 
-       
+
 
         private void commande_livree_Click(object sender, EventArgs e)
         {
             int idCommande = Convert.ToInt32(commande.SelectedValue);
-            
+
 
             using (MySqlConnection conn = new MySqlConnection(Global.ConnectionString))
             {
@@ -168,7 +168,7 @@ namespace Fromagerie
                     using (MySqlCommand cmd = new MySqlCommand(query, conn))
                     {
                         cmd.Parameters.AddWithValue("@idCommande", idCommande);
-                        
+
 
                         int lignesAffectees = cmd.ExecuteNonQuery();
 
@@ -185,6 +185,41 @@ namespace Fromagerie
                     MessageBox.Show("Erreur : " + ex.Message);
                 }
             }
+        }
+
+        private void navInscription_Click(object sender, EventArgs e)
+        {
+            PageAdmin page = new PageAdmin();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navVendeur_Click(object sender, EventArgs e)
+        {
+            PageVendeur page = new PageVendeur();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navAnimal_Click(object sender, EventArgs e)
+        {
+            AjoutAnimal page = new AjoutAnimal();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navLogs_Click(object sender, EventArgs e)
+        {
+            logs page = new logs();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navLivrees_Click(object sender, EventArgs e)
+        {
+            commandeslivrees page = new commandeslivrees();
+            page.Show();
+            this.Hide();
         }
     }
 }

@@ -182,6 +182,7 @@ namespace Fromagerie
             TestMDP.TabIndex = 8;
             TestMDP.Text = "Créer mon compte";
             TestMDP.UseVisualStyleBackColor = false;
+            TestMDP.Click += TestMDP_Click;
             // 
             // LienConnexion
             // 

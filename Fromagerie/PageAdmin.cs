@@ -19,7 +19,7 @@ namespace Fromagerie
         }
 
 
-        private void button1_Click(object sender, EventArgs e)
+        private void inscrire_Click(object sender, EventArgs e)
         {
             string nom = Inscriptionvendeur.Text;
             string motDePasse = UnInscripMDPUser.Text;
@@ -118,49 +118,64 @@ namespace Fromagerie
         }
 
 
-        private void button2_Click(object sender, EventArgs e)
+
+        private void mainPanel_Paint(object sender, PaintEventArgs e)
         {
-            Form1 page = new Form1();
-            page.Show();
-            this.Close();
+
         }
 
+        private void formTitle_Click(object sender, EventArgs e)
+        {
 
-        private void pagevendeur_Click(object sender, EventArgs e)
+        }
+
+        private void pagevendeur_Click_1(object sender, EventArgs e)
         {
             PageVendeur page = new PageVendeur();
             page.Show();
             this.Close();
         }
 
-
-        private void button1_Click_1(object sender, EventArgs e)
+        private void unajoutanimal_Click(object sender, EventArgs e)
         {
             AjoutAnimal page = new AjoutAnimal();
             page.Show();
             this.Close();
         }
 
-
-        private void afficherlogs_Click(object sender, EventArgs e)
+        private void afficherlogs_Click_1(object sender, EventArgs e)
         {
             logs page = new logs();
             page.Show();
             this.Close();
         }
 
-        private void livraison__Click(object sender, EventArgs e)
+        private void livraison__Click_1(object sender, EventArgs e)
         {
             Livraison_commande page = new Livraison_commande();
             page.Show();
             this.Close();
         }
 
-        private void livrees_Click(object sender, EventArgs e)
+        private void livrees_Click_1(object sender, EventArgs e)
         {
             commandeslivrees page = new commandeslivrees();
             page.Show();
             this.Close();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form1 page = new Form1();
+            page.Show();
+            this.Hide();
+        }
+
+        private void commandesLabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+       
     }
 }

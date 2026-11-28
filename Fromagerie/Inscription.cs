@@ -16,7 +16,7 @@ namespace Fromagerie
             InitializeComponent();
         }
 
-        private void uneinscription_Click(object sender, EventArgs e)
+        private void TestMDP_Click(object sender, EventArgs e)
         {
             string nom = EmailTB.Text.Trim();
             string motDePasse = mdpinscription.Text;
@@ -122,5 +122,7 @@ namespace Fromagerie
 
             this.Close();
         }
+
+        
     }
 }

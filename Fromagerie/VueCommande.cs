@@ -1,3 +1,4 @@
+using Microsoft.VisualBasic.Logging;
 using MySql.Data.MySqlClient;
 using System;
 using System.Data;
@@ -148,7 +149,7 @@ namespace Fromagerie
             }
         }
 
-        
+
         private void RemplirCBCommande()
         {
             using (MySqlConnection conn =
@@ -183,7 +184,7 @@ namespace Fromagerie
             }
         }
 
-        
+
         private void RemplirCBLivreur()
         {
             using (MySqlConnection conn =
@@ -220,7 +221,7 @@ namespace Fromagerie
             }
         }
 
-        
+
         private void livrerlescommandes_Click(object sender, EventArgs e)
         {
             if (idComamnde.SelectedValue == null ||
@@ -277,7 +278,7 @@ namespace Fromagerie
             }
         }
 
-        // Retour à la page livreur
+
         private void button1_Click(object sender, EventArgs e)
         {
             PageLivreur page = new PageLivreur();
@@ -293,6 +294,49 @@ namespace Fromagerie
         private void livreurcommande_SelectedIndexChanged(
             object sender, EventArgs e)
         {
+        }
+
+        private void navLivraison_Click(object sender, EventArgs e)
+        {
+            Livraison_commande page = new Livraison_commande();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navLivrees_Click(object sender, EventArgs e)
+        {
+            commandeslivrees page = new commandeslivrees();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navLogs_Click(object sender, EventArgs e)
+        {
+            logs page = new logs();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navAnimal_Click(object sender, EventArgs e)
+        {
+            AjoutAnimal page = new AjoutAnimal();
+            page.Show();
+            this.Hide();
+
+        }
+
+        private void navVendeur_Click(object sender, EventArgs e)
+        {
+            PageVendeur page = new PageVendeur();
+            page.Show();
+            this.Hide();
+        }
+
+        private void navInscription_Click(object sender, EventArgs e)
+        {
+            PageAdmin page = new PageAdmin();
+            page.Show();
+            this.Hide();
         }
     }
 }
