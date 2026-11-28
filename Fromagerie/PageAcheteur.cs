@@ -1,0 +1,60 @@
+using MySqlX.XDevAPI;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Fromagerie
+{
+    public partial class PageAjoutCommande : Form
+    {
+        public PageAjoutCommande()
+        {
+            InitializeComponent();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Histoire page = new Histoire();
+            page.Show();
+            this.Hide();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Form1 page = new Form1();
+            page.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PageAjoutCommande_Load(object sender, EventArgs e)
+        {
+            labelBienvenue.Text = "Bienvenue sur le site Internet d'Eure-et-Loir Fromage " + Session.NomUtilisateur + " !!!";
+        }
+
+        private void labelBienvenue_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void livraison_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void livrer_Click(object sender, EventArgs e)
+        {
+            commandeslivrees page = new commandeslivrees();
+            page.Show();
+            this.Hide();
+        }
+    }
+}

@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="label1.Text" xml:space="preserve">
+    <value>🧀 Eure-et-Loir Fromage : la légende commence en 2024
+Chapitre I — La naissance d'un empire
+Tout commence en 2024, dans les terres paisibles de l’Eure-et-Loir.
+À cette époque, personne ne se doutait qu’une révolution fromagère était sur le point de bouleverser le département. Pendant que les habitants vivaient leur quotidien tranquillement, un projet mystérieux voyait le jour sur Internet : Eure-et-Loir Fromage.
+Au départ, ce n’était qu’une idée. Mais très vite, le projet prit une ampleur inattendue.
+Les premières publications apparaissent en 2024. Les premières discussions commencent et une communauté se forme peu à peu.
+Mais Eure-et-Loir Fromage ne voulait pas simplement parler de fromage. Non. L'objectif était bien plus ambitieux : devenir la référence fromagère absolue du département.
+Brie, camembert, chèvre, emmental… aucun fromage n'était à l'abri de leur ambition.
+Dans l'ombre, une devise commençait à circuler :
+« Un département. Une passion. Des milliers de fromages. »
+Chapitre II — La conquête du 28
+Au fil des mois, Eure-et-Loir Fromage commença à bâtir sa réputation.
+Le département 28 devint son territoire symbolique. Chaque ville représentait une nouvelle frontière à conquérir. Chartres, Dreux, Châteaudun et Nogent-le-Rotrou étaient désormais sur la carte.
+Mais derrière cette ambition se cachait une question fondamentale : qui contrôlait réellement le marché du fromage en Eure-et-Loir ?
+Les grandes surfaces ? Les fromagers traditionnels ? Les amateurs de raclette du vendredi soir ?
+La réponse était claire : personne ne pouvait prétendre régner sans affronter la légende.
+Chapitre III — La guerre des fromages
+L'année 2025 marqua un tournant dans l'histoire.
+Les tensions montèrent entre les différentes familles fromagères. Les partisans du chèvre réclamaient davantage de reconnaissance. Les amateurs de camembert défendaient leur patrimoine. Quant aux inconditionnels de la raclette, ils menaçaient de faire fondre tout obstacle sur leur passage.
+Eure-et-Loir Fromage dut alors prendre une décision historique : rester neutre ou choisir son camp.
+La légende raconte qu'un conseil secret se réunit un soir, autour d'une table garnie de fromages.
+Après trois heures de débat et plusieurs morceaux de pain, une conclusion fut adoptée :
+Tous les fromages sont les bienvenus. Sauf ceux qui finissent oubliés au fond du frigo.
+La paix fut rétablie.
+Chapitre IV — Vers la domination fromagère
+En 2026, Eure-et-Loir Fromage n'est plus seulement un projet né sur Internet. Dans cette légende, c'est devenu un symbole d'ambition, de camaraderie et de passion fromagère.
+Son avenir reste à écrire. Certains parlent d'une expansion vers toute la région Centre-Val de Loire. D'autres évoquent une alliance avec les plus grands producteurs de France.
+Une chose est sûre : le combat n'est pas terminé.
+Car quelque part, dans un réfrigérateur oublié, un fromage attend son heure.
+Et lorsque le moment viendra, Eure-et-Loir Fromage sera prêt.
+
+🧀 La devise officielle
+« Depuis 2024, le 28 ne se contente plus de vivre. Il s'affine. »
+
+Eure-et-Loir Fromage — l'histoire est peut-être fictive, mais la faim de grandeur est bien réelle.</value>
+  </data>
+</root>
